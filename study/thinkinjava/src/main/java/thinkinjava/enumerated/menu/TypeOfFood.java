@@ -1,0 +1,13 @@
+//: enumerated/menu/TypeOfFood.java
+package thinkinjava.enumerated.menu;
+/**
+ * 所有的东西都是某种类型的Food
+ */
+public class TypeOfFood {
+  public static void main(String[] args) {
+    Food food = Food.Appetizer.SALAD;
+    food = Food.MainCourse.LASAGNE;
+    food = Food.Dessert.GELATO;
+    food = Food.Coffee.CAPPUCCINO;
+  }
+} ///:~
