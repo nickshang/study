@@ -1,7 +1,7 @@
 //: net/mindview/util/Range.java
 // Array creation methods that can be used without
 // qualifiers, using Java SE5 static imports:
-package mindview.util;
+package net.mindview.util;
 
 public class Range {
   // Produce a sequence [0..n)

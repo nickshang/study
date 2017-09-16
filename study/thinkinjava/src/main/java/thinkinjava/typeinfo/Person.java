@@ -2,10 +2,10 @@ package thinkinjava.typeinfo;
 //: typeinfo/Person.java
 // A class with a Null Object.
 
-import  thinkinjava.net.mindview.util.*;
+import net.mindview.util.Null;
 
 /**
- * ÈËÔ±
+ * ï¿½ï¿½Ô±
  */
 class Person {
     public final String first;

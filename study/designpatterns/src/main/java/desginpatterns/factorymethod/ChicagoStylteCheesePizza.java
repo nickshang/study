@@ -1,7 +1,7 @@
-package desginpatterns.factorymethod;
+ï»¿package desginpatterns.factorymethod;
 
 /**
- * ¹¦ÄÜÃèÊö£ºÅ¦Ô¼·çÎ¶Pizza
+ * åŠŸèƒ½æè¿°ï¼šçº½çº¦é£å‘³Pizza
  * @author NICK
  *
  */
@@ -10,7 +10,7 @@ public class ChicagoStylteCheesePizza extends Pizza {
 		name = "Chicago Style sauce and Cheese Pizza";
 		dough =  "Thin Crust Dough";
 		sauce = "Marinara sauce";
-		topping.add("Greted Reggiano Cheese"); // ¸²¸ÇÒâ´óÀû¸ß¼¶¸ÉÀÒ¡¢
+		topping.add("Greted Reggiano Cheese"); // è¦†ç›–æ„å¤§åˆ©é«˜çº§å¹²é…ªã€
 		
 	}
 }

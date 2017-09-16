@@ -1,6 +1,6 @@
 package thinkinjava.containers;//: containers/QueueBehavior.java
 // Compares the behavior of some of the queues
-import thinkinjava.net.mindview.util.Generator;
+import net.mindview.util.Generator;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;

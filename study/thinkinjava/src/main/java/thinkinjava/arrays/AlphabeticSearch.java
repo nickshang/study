@@ -1,7 +1,7 @@
 package thinkinjava.arrays;//: arrays/AlphabeticSearch.java
 // Searching with a Comparator.
-import thinkinjava.net.mindview.util.Generated;
-import thinkinjava.net.mindview.util.RandomGenerator;
+import net.mindview.util.Generated;
+import net.mindview.util.RandomGenerator;
 
 import java.util.Arrays;
 

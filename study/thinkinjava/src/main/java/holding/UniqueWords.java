@@ -1,4 +1,4 @@
-package thinkinjava.holding;//: holding/UniqueWords.java
+package holding;//: holding/UniqueWords.java
 import net.mindview.util.TextFile;
 
 import java.util.Set;

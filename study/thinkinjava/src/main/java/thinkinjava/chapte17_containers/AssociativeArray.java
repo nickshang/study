@@ -1,6 +1,7 @@
-//: containers/AssociativeArray.java
+package thinkinjava.chapte17_containers;//: containers/AssociativeArray.java
 // Associates keys with values.
-import static net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 public class AssociativeArray<K,V> {
   private Object[][] pairs;

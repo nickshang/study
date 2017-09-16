@@ -1,10 +1,10 @@
 package thinkinjava.containers;//: containers/ReadOnly.java
 // Using the Collections.unmodifiable methods.
-import thinkinjava.net.mindview.util.Countries;
+import net.mindview.util.Countries;
 
 import java.util.*;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 public class ReadOnly {
   static Collection<String> data =

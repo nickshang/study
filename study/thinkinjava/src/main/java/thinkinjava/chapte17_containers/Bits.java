@@ -1,7 +1,8 @@
-//: containers/Bits.java
+package thinkinjava.chapte17_containers;//: containers/Bits.java
 // Demonstration of BitSet.
 import java.util.*;
-import static net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 public class Bits {
   public static void printBitSet(BitSet b) {

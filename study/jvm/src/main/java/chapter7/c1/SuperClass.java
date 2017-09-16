@@ -1,4 +1,4 @@
-package chapter7;
+package chapter7.c1;
 
 /**
  * 测试类初始化

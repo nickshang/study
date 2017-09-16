@@ -5,9 +5,9 @@ import java.io.FilenameFilter;
 
 /**
  *
- * Ê¹ÓÃjava.io.FileÀàµÄlist(FilenameFilter)·½·¨£¬±àÐ´Ò»¸ö·µ»ØÖ¸¶¨Ä¸µÄÏÂµÄ£¬
- * ¾ßÓÐÀ©Õ¹ÃûµÄËùÓÐÎÄ¼þ¡£
- * Ê¹ÓÃlambda±í´ïÊ½£¨¶ø²»ÊÇFileNameFilter£©À´ÊµÏÖ¡£
+ * ä½¿ç”¨java.io.Fileç±»çš„list(FilenameFilter)æ–¹æ³•ï¼Œç¼–å†™ä¸€ä¸ªè¿”å›žæŒ‡å®šæ¯çš„ä¸‹çš„ï¼Œ
+ * å…·æœ‰æ‰©å±•åçš„æ‰€æœ‰æ–‡ä»¶ã€‚
+ * ä½¿ç”¨lambdaè¡¨è¾¾å¼ï¼ˆè€Œä¸æ˜¯FileNameFilterï¼‰æ¥å®žçŽ°ã€‚
  * Think on 2016/6/29.
  */
 public class FileNameFilterTest {
@@ -16,7 +16,7 @@ public class FileNameFilterTest {
 
         File f = new File("D:\\");
 
-        // ¹ýÂËÎÄ¼þ-¡· ÄÚ²¿Àà£¨ÄäÃûÀà£©ÊµÏÖ·½Ê½
+        // è¿‡æ»¤æ–‡ä»¶-ã€‹ å†…éƒ¨ç±»ï¼ˆåŒ¿åç±»ï¼‰å®žçŽ°æ–¹å¼
         FilenameFilter filter = new FilenameFilter(){
             @Override
             public boolean accept(File dir, String name) {
@@ -31,7 +31,7 @@ public class FileNameFilterTest {
             System.out.println("file:" + n );
         }
 
-        // lambda±í´ïÊ½1
+        // lambdaè¡¨è¾¾å¼1
         FilenameFilter ff = ( dir,  name) -> {
             if( name.contains("txt") ){
                 return true;
@@ -45,7 +45,7 @@ public class FileNameFilterTest {
         }
 
 
-        // lambda±í´ïÊ½2 -> ÀàÐÍÍÆ¶Ï
+        // lambdaè¡¨è¾¾å¼2 -> ç±»åž‹æŽ¨æ–­
         names = f.list(
                 (dir,name) -> {
                     if( name.contains("txt") )  return true;

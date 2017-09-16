@@ -1,6 +1,6 @@
 package thinkinjava.chapte8_polymorphism;
 
-import static thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 class Characteristic {
 	private String s;

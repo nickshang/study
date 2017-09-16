@@ -2,7 +2,7 @@ package thinkinjava.typeinfo;
 //: typeinfo/PetCount3.java
 // Using isInstance()
 
-import  thinkinjava.net.mindview.util.MapData;
+import net.mindview.util.MapData;
 import  thinkinjava.typeinfo.pets.LiteralPetCreator;
 import  thinkinjava.typeinfo.pets.Pet;
 import  thinkinjava.typeinfo.pets.Pets;
@@ -10,11 +10,11 @@ import  thinkinjava.typeinfo.pets.Pets;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static  thinkinjava.net.mindview.util.Print.print;
-import static  thinkinjava.net.mindview.util.Print.printnb;
+import static  net.mindview.util.Print.print;
+import static  net.mindview.util.Print.printnb;
 
 /**
- * Ê¹ÓÃ¶¯Ì¬µÄinstanceof
+ * Ê¹ï¿½Ã¶ï¿½Ì¬ï¿½ï¿½instanceof
  */
 public class PetCount3 {
     static class PetCounter

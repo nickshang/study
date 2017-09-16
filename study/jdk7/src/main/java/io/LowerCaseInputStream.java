@@ -3,8 +3,8 @@ package io;
 import java.io.*;
 
 /**
- * ¹¦ÄÜÃèÊö£º×Ô¶¨ÒåInputStream×°ÊÎÀà
- * ½«ÊäÈëÁ÷ÄÚµÄËùÓÐ´óÐ´×Ö·û×ª»»Ð¡Ð´
+ * åŠŸèƒ½æè¿°ï¼šè‡ªå®šä¹‰InputStreamè£…é¥°ç±»
+ * å°†è¾“å…¥æµå†…çš„æ‰€æœ‰å¤§å†™å­—ç¬¦è½¬æ¢å°å†™
  * @author NICK
  *
  */
@@ -30,7 +30,7 @@ public class LowerCaseInputStream extends FilterInputStream {
 	}
 	
 	/**
-	 * ²âÊÔLowerCaseInputStream
+	 * æµ‹è¯•LowerCaseInputStream
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -38,7 +38,7 @@ public class LowerCaseInputStream extends FilterInputStream {
 		try{
 			InputStream in = 
 					new LowerCaseInputStream( new BufferedInputStream(
-							new FileInputStream("C:\\Users\\Think\\Desktop\\ÍÆ¼öÊý¾Ý.txt")
+							new FileInputStream("C:\\Users\\Think\\Desktop\\æŽ¨èæ•°æ®.txt")
 							));
 			while( ( c = in.read() ) >= 0 ){
 				System.out.println(Character.toChars(c));

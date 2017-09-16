@@ -1,6 +1,8 @@
-//: containers/DequeTest.java
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+package thinkinjava.chapte17_containers;//: containers/DequeTest.java
+import net.mindview.util.Deque;
+
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 public class DequeTest {
   static void fillTest(Deque<Integer> deque) {

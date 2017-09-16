@@ -1,20 +1,20 @@
-package desginpatterns.factorymethod;
+ï»¿package desginpatterns.factorymethod;
 
 /**
- * ¹¦ÄÜÃèÊö£ºÅûÈøÉÌµê
+ * åŠŸèƒ½æè¿°ï¼šæŠ«è¨å•†åº—
  * @author NICK
  *
  */
 public abstract class PizzaStore {
 	
 	/**
-	 * PizzaÀàĞÍ
+	 * Pizzaç±»å‹
 	 * @author Think
 	 */
 	public enum Type { cheese }; 
 	
 	/**
-	 * ¶©µ¥Pizza
+	 * è®¢å•Pizza
 	 * @param type
 	 */
 	public void orderPizza(Type type){

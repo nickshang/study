@@ -29,7 +29,7 @@ public class T1 {
             Class.forName(dbdriver);
             return DriverManager.getConnection(database, dbusername, dbpassword);      
         }catch(Exception ex){
-            System.err.println("Êı¾İ¿âÇı¶¯ÎÄ¼ş´íÎó:" + ex.getMessage());
+            System.err.println("æ•°æ®åº“é©±åŠ¨æ–‡ä»¶é”™è¯¯:" + ex.getMessage());
            
         }
 		
@@ -112,7 +112,7 @@ public class T1 {
 //		for( int i=0; i<max; i++ )
 //		{
 //			conns.add( t.getType( "" ) ); 
-//			System.out.println( "´ò¿ªÁ¬½Ó:" + i );
+//			System.out.println( "æ‰“å¼€è¿æ¥:" + i );
 //		}
 //		
 //		try {
@@ -125,7 +125,7 @@ public class T1 {
 //		for(Connection con:conns){
 //			try {
 //				con.close();
-//				System.out.println( "¹Ø±ÕÁ¬½Ó:" + z++ );
+//				System.out.println( "å…³é—­è¿æ¥:" + z++ );
 //			} catch (SQLException e) {
 //				e.printStackTrace();
 //			}

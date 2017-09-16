@@ -1,4 +1,4 @@
-package thinkinjava.holding;//: holding/CrossContainerIteration.java
+package holding;//: holding/CrossContainerIteration.java
 import thinkinjava.typeinfo.pets.*;
 import java.util.*;
 

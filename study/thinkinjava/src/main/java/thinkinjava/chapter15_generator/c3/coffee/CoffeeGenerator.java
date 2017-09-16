@@ -1,6 +1,6 @@
 package thinkinjava.chapter15_generator.c3.coffee;
 
-import thinkinjava.net.mindview.util.Generator;
+import net.mindview.util.Generator;
 
 import java.util.Iterator;
 import java.util.Random;

@@ -1,23 +1,23 @@
 package thinkinjava.chapter15_generator.c2;
 
-import thinkinjava.net.mindview.util.ThreeTuple;
-import thinkinjava.net.mindview.util.TwoTuple;
-import thinkinjava.net.mindview.util.FourTuple;
-import thinkinjava.net.mindview.util.FiveTuple;
+import net.mindview.util.ThreeTuple;
+import net.mindview.util.TwoTuple;
+import net.mindview.util.FourTuple;
+import net.mindview.util.FiveTuple;
 
 /**
  * 
- * @类描述： 元组类库测试
- * @创建人：NICK
+ * @锟斤拷锟斤拷锟斤拷锟斤拷 元锟斤拷锟斤拷锟斤拷锟斤拷
+ * @锟斤拷锟斤拷锟剿ｏ拷NICK
  * @mail sjshang@tsingsoft.com
- * @创建时间：2016年4月24日 上午10:47:49
- * @修改人：NICK
- * @修改时间：2016年4月24日 上午10:47:49
- * @修改备注：
+ * @锟斤拷锟斤拷时锟戒：2016锟斤拷4锟斤拷24锟斤拷 锟斤拷锟斤拷10:47:49
+ * @锟睫革拷锟剿ｏ拷NICK
+ * @锟睫革拷时锟戒：2016锟斤拷4锟斤拷24锟斤拷 锟斤拷锟斤拷10:47:49
+ * @锟睫改憋拷注锟斤拷
  * @version v1.0
  * @see [nothing]
  * @bug [nothing]
- * @Copyright 北京清软创新科技股份有限公司
+ * @Copyright 锟斤拷锟斤拷锟斤拷锟斤拷锟铰科硷拷锟缴凤拷锟斤拷锟睫癸拷司
  */
 public class TupleTest {
 	

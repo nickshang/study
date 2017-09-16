@@ -1,7 +1,7 @@
 package thinkinjava.typeinfo;
 //: typeinfo/FamilyVsExactType.java
 
-import static  thinkinjava.net.mindview.util.Print.print;
+import static  net.mindview.util.Print.print;
 
 class Base {
 }
@@ -10,7 +10,7 @@ class Derived extends Base {
 }
 
 /**
- * instanceofºÍClassµÄµÈ¼ÛÐÔÓë²î±ð
+ * instanceofï¿½ï¿½Classï¿½ÄµÈ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class FamilyVsExactType {
     static void test(Object x) {

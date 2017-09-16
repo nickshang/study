@@ -4,8 +4,8 @@ import thinkinjava.typeinfo.pets.*;
 
 import java.util.HashMap;
 
-import static thinkinjava.net.mindview.util.Print.print;
-import static thinkinjava.net.mindview.util.Print.printnb;
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 /**
  * Created by Think on 2016/5/25.

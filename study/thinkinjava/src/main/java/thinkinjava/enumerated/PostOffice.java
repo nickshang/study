@@ -1,11 +1,11 @@
 package thinkinjava.enumerated;//: enumerated/PostOffice.java
 // Modeling a post office.
 
-import thinkinjava.net.mindview.util.Enums;
+import net.mindview.util.Enums;
 
 import java.util.Iterator;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 /**
  * 邮件每个关键特征有enum来表示。

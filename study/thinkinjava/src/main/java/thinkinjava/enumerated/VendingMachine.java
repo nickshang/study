@@ -2,14 +2,14 @@
 // {Args: VendingMachineInput.txt}
 package thinkinjava.enumerated;
 
-import  thinkinjava.net.mindview.util.Generator;
-import  thinkinjava.net.mindview.util.TextFile;
+import net.mindview.util.Generator;
+import net.mindview.util.TextFile;
 
 import java.util.EnumMap;
 import java.util.Iterator;
 
 import static thinkinjava.enumerated.Input.*;
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 /**
  *  种类

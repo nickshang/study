@@ -1,10 +1,8 @@
 //: net/mindview/util/Countries.java
 // "Flyweight" Maps and Lists of sample data.
-package mindview.util;
+package net.mindview.util;
 
 import java.util.*;
-
-import static  mindview.util.Print.*;
 
 public class Countries {
     public static final String[][] DATA = {
@@ -252,18 +250,18 @@ public class Countries {
     }
 
     public static void main(String[] args) {
-        print(capitals(10));
-        print(names(10));
-        print(new HashMap<String, String>(capitals(3)));
-        print(new LinkedHashMap<String, String>(capitals(3)));
-        print(new TreeMap<String, String>(capitals(3)));
-        print(new Hashtable<String, String>(capitals(3)));
-        print(new HashSet<String>(names(6)));
-        print(new LinkedHashSet<String>(names(6)));
-        print(new TreeSet<String>(names(6)));
-        print(new ArrayList<String>(names(6)));
-        print(new LinkedList<String>(names(6)));
-        print(capitals().get("BRAZIL"));
+        Print.print(capitals(10));
+        Print.print(names(10));
+        Print.print(new HashMap<String, String>(capitals(3)));
+        Print.print(new LinkedHashMap<String, String>(capitals(3)));
+        Print.print(new TreeMap<String, String>(capitals(3)));
+        Print.print(new Hashtable<String, String>(capitals(3)));
+        Print.print(new HashSet<String>(names(6)));
+        Print.print(new LinkedHashSet<String>(names(6)));
+        Print.print(new TreeSet<String>(names(6)));
+        Print.print(new ArrayList<String>(names(6)));
+        Print.print(new LinkedList<String>(names(6)));
+        Print.print(capitals().get("BRAZIL"));
     }
 } /* Output:
 {ALGERIA=Algiers, ANGOLA=Luanda, BENIN=Porto-Novo, BOTSWANA=Gaberone, BULGARIA=Sofia, BURKINA FASO=Ouagadougou, BURUNDI=Bujumbura, CAMEROON=Yaounde, CAPE VERDE=Praia, CENTRAL AFRICAN REPUBLIC=Bangui}

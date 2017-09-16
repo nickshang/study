@@ -1,12 +1,12 @@
 package thinkinjava.arrays;//: arrays/TestArrayGeneration.java
 // Test the tools that use generators to fill arrays.
-import thinkinjava.net.mindview.util.ConvertTo;
-import thinkinjava.net.mindview.util.Generated;
-import thinkinjava.net.mindview.util.RandomGenerator;
+import net.mindview.util.ConvertTo;
+import net.mindview.util.Generated;
+import net.mindview.util.RandomGenerator;
 
 import java.util.Arrays;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 public class TestArrayGeneration {
   public static void main(String[] args) {

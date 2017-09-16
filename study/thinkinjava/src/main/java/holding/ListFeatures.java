@@ -1,6 +1,8 @@
-package thinkinjava.holding;//: holding/ListFeatures.java
+package holding;//: holding/ListFeatures.java
 import thinkinjava.typeinfo.pets.*;
 import java.util.*;
+
+import static net.mindview.util.Print.print;
 
 public class ListFeatures {
   public static void main(String[] args) {

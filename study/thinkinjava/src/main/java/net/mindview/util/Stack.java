@@ -1,6 +1,6 @@
 //: net/mindview/util/Stack.java
 // Making a stack from a LinkedList.
-package mindview.util;
+package net.mindview.util;
 import java.util.LinkedList;
 
 public class Stack<T> {

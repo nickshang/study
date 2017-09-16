@@ -1,7 +1,7 @@
 package thinkinjava.enumerated;//: enumerated/NotClasses.java
 // {Exec: javap -c LikeClasses}
 
-import static thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 /**
  *  enum实例并不能做一个类型来使用

@@ -1,7 +1,7 @@
-package desginpatterns.factorymethod;
+锘縫ackage desginpatterns.factorymethod;
 
 /**
- * 功能描述：芝加哥Pizza商店
+ * 鍔熻兘鎻忚堪锛氳姖鍔犲摜Pizza鍟嗗簵
  * @author NICK
  *
  */

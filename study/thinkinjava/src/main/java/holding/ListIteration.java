@@ -1,4 +1,4 @@
-package thinkinjava.holding;//: holding/ListIteration.java
+package holding;//: holding/ListIteration.java
 import thinkinjava.typeinfo.pets.*;
 import java.util.*;
 

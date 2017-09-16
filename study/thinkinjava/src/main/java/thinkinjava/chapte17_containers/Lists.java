@@ -1,8 +1,11 @@
-//: containers/Lists.java
+package thinkinjava.chapte17_containers;//: containers/Lists.java
 // Things you can do with Lists.
 import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+
+import net.mindview.util.Countries;
+
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 public class Lists {
   private static boolean b;

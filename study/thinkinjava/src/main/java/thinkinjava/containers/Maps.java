@@ -1,12 +1,12 @@
 package thinkinjava.containers;//: containers/Maps.java
 // Things you can do with Maps.
-import thinkinjava.net.mindview.util.CountingMapData;
+import net.mindview.util.CountingMapData;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static thinkinjava.net.mindview.util.Print.print;
-import static thinkinjava.net.mindview.util.Print.printnb;
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 public class Maps {
   public static void printKeys(Map<Integer,String> map) {

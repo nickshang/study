@@ -1,13 +1,13 @@
 package thinkinjava.arrays;//: arrays/ArraySearching.java
 // Using Arrays.binarySearch().
-import thinkinjava.net.mindview.util.ConvertTo;
-import thinkinjava.net.mindview.util.Generated;
-import thinkinjava.net.mindview.util.Generator;
-import thinkinjava.net.mindview.util.RandomGenerator;
+import net.mindview.util.ConvertTo;
+import net.mindview.util.Generated;
+import net.mindview.util.Generator;
+import net.mindview.util.RandomGenerator;
 
 import java.util.Arrays;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 public class ArraySearching {
   public static void main(String[] args) {

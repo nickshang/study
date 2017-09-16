@@ -1,4 +1,4 @@
-//: containers/Synchronization.java
+package thinkinjava.chapte17_containers;//: containers/Synchronization.java
 // Using the Collections.synchronized methods.
 import java.util.*;
 

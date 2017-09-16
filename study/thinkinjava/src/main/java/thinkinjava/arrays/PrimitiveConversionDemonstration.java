@@ -1,7 +1,7 @@
 package thinkinjava.arrays;//: arrays/PrimitiveConversionDemonstration.java
-import thinkinjava.net.mindview.util.ConvertTo;
-import thinkinjava.net.mindview.util.CountingGenerator;
-import thinkinjava.net.mindview.util.Generated;
+import net.mindview.util.ConvertTo;
+import net.mindview.util.CountingGenerator;
+import net.mindview.util.Generated;
 
 import java.util.Arrays;
 

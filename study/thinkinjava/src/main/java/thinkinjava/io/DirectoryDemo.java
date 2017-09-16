@@ -1,11 +1,11 @@
 package thinkinjava.io;//: io/DirectoryDemo.java
 // Sample use of Directory utilities.
-import thinkinjava.net.mindview.util.Directory;
-import thinkinjava.net.mindview.util.PPrint;
+import net.mindview.util.Directory;
+import net.mindview.util.PPrint;
 
 import java.io.File;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 public class DirectoryDemo {
   public static void main(String[] args) {

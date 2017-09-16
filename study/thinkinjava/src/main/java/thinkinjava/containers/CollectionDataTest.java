@@ -1,7 +1,7 @@
 package thinkinjava.containers;//: containers/CollectionDataTest.java
 
-import thinkinjava.net.mindview.util.CollectionData;
-import thinkinjava.net.mindview.util.Generator;
+import net.mindview.util.CollectionData;
+import net.mindview.util.Generator;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

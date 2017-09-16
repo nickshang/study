@@ -2,8 +2,9 @@ package java7.classbytecode;
 
 // NOTE: This class requires the ASM library - version 4 RC1 or above.
 
+import jdk.internal.org.objectweb.asm.Handle;
 import org.objectweb.asm.ClassWriter;
-import org.objectweb.asm.Handle;
+//import org.objectweb.asm.Handle;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Type;
 
@@ -25,59 +26,59 @@ public class DynamicIndyMaker {
   public void makeClassWithInvokeDynamic(String nameOfIndyCallsite,
       MethodType desc, Class<?> bsmClass, String bsmName, MethodType bsmType,
       Object... bsmArgs) {
-    ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES);
-    String clazzName = "Gen" + (ID_GENERATOR++);
-    cw.visit(V1_7, ACC_PUBLIC | ACC_SUPER, clazzName, null, "java/lang/Object",
-        null);
-
-    MethodVisitor init = cw
-        .visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
-    init.visitCode();
-    init.visitVarInsn(ALOAD, 0);
-    init.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V");
-    init.visitInsn(RETURN);
-    init.visitMaxs(-1, -1);
-    init.visitEnd();
-
-    String descriptor = desc.toMethodDescriptorString();
-
-    MethodVisitor mv = cw.visitMethod(ACC_PUBLIC | ACC_STATIC, "invokedynamic",
-        descriptor, null, null);
-    // MethodVisitor mv = cw.visitMethod(ACC_PUBLIC, "invokedynamic",
-    // descriptor, null, null);
-    int slot = 0;
-    for (Type parameterType : Type.getArgumentTypes(descriptor)) {
-      mv.visitVarInsn(parameterType.getOpcode(ILOAD), slot);
-      slot += parameterType.getSize();
-    }
-
-    // 1st 2 args are name and descriptor of this indy callsite
-    mv.visitInvokeDynamicInsn(nameOfIndyCallsite, descriptor,
-        new Handle(H_INVOKESTATIC, bsmClass.getName().replace('.', '/'),
-            bsmName, bsmType.toMethodDescriptorString()), bsmArgs);
-
-    Type returnType = Type.getReturnType(descriptor);
-    mv.visitInsn(returnType.getOpcode(IRETURN));
-
-    mv.visitMaxs(-1, -1);
-    mv.visitEnd();
-
-    cw.visitEnd();
-
-    byte[] bytes = cw.toByteArray();
-    // Class<?> clazz = defineClass(null, bytes, 0, bytes.length);
-
-    /*
-     * try (FileOutputStream fos = new FileOutputStream(clazzName + ".class")) {
-     * fos.write(bytes); }
-     */
-
-    try {
-      FileOutputStream fos = new FileOutputStream(clazzName + ".class");
-      fos.write(bytes);
-    } catch (IOException iox) {
-      iox.printStackTrace();
-    }
+//    ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES);
+//    String clazzName = "Gen" + (ID_GENERATOR++);
+//    cw.visit(V1_7, ACC_PUBLIC | ACC_SUPER, clazzName, null, "java/lang/Object",
+//        null);
+//
+//    MethodVisitor init = cw
+//        .visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+//    init.visitCode();
+//    init.visitVarInsn(ALOAD, 0);
+//    init.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V");
+//    init.visitInsn(RETURN);
+//    init.visitMaxs(-1, -1);
+//    init.visitEnd();
+//
+//    String descriptor = desc.toMethodDescriptorString();
+//
+//    MethodVisitor mv = cw.visitMethod(ACC_PUBLIC | ACC_STATIC, "invokedynamic",
+//        descriptor, null, null);
+//    // MethodVisitor mv = cw.visitMethod(ACC_PUBLIC, "invokedynamic",
+//    // descriptor, null, null);
+//    int slot = 0;
+//    for (Type parameterType : Type.getArgumentTypes(descriptor)) {
+//      mv.visitVarInsn(parameterType.getOpcode(ILOAD), slot);
+//      slot += parameterType.getSize();
+//    }
+//
+//    // 1st 2 args are name and descriptor of this indy callsite
+//    mv.visitInvokeDynamicInsn(nameOfIndyCallsite, descriptor,
+//        new Handle(H_INVOKESTATIC, bsmClass.getName().replace('.', '/'),
+//            bsmName, bsmType.toMethodDescriptorString()), bsmArgs);
+//
+//    Type returnType = Type.getReturnType(descriptor);
+//    mv.visitInsn(returnType.getOpcode(IRETURN));
+//
+//    mv.visitMaxs(-1, -1);
+//    mv.visitEnd();
+//
+//    cw.visitEnd();
+//
+//    byte[] bytes = cw.toByteArray();
+//    // Class<?> clazz = defineClass(null, bytes, 0, bytes.length);
+//
+//    /*
+//     * try (FileOutputStream fos = new FileOutputStream(clazzName + ".class")) {
+//     * fos.write(bytes); }
+//     */
+//
+//    try {
+//      FileOutputStream fos = new FileOutputStream(clazzName + ".class");
+//      fos.write(bytes);
+//    } catch (IOException iox) {
+//      iox.printStackTrace();
+//    }
 
     /*
      * try { return MethodHandles.lookup().findStatic(clazz, "invokedynamic",

@@ -1,4 +1,4 @@
-﻿package thinkinjava.chapter21_concurrency.c2;
+package thinkinjava.chapter21_concurrency.c2;
 
 /**
  * 功能描述：将线程类隐藏在内部

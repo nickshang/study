@@ -1,4 +1,5 @@
-﻿package thinkinjava.chapte14_typeinfo;
+
+package thinkinjava.chapte14_typeinfo;
 
 /**
  * Created by Think on 2016/5/23.

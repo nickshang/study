@@ -4,13 +4,13 @@ import java.io.File;
 
 public class FtpUtilCommonsTest2 {
 
-	// ˝æ›FTP≈‰÷√
-	public static String FTP_EMS_IP = "192.111.4.3";   //±Í ∂÷µ
-	public static int FTP_EMS_PORT = 21;   //±Í ∂÷µ
-	public static String FTP_EMS_USERNAME = "oracle";   //±Í ∂÷µ
-	public static String FTP_EMS_PW = "oracle";   //±Í ∂÷µ
+	//Êï∞ÊçÆFTPÈÖçÁΩÆ
+	public static String FTP_EMS_IP = "192.111.4.3";   //Ê†áËØÜÂÄº
+	public static int FTP_EMS_PORT = 21;   //Ê†áËØÜÂÄº
+	public static String FTP_EMS_USERNAME = "oracle";   //Ê†áËØÜÂÄº
+	public static String FTP_EMS_PW = "oracle";   //Ê†áËØÜÂÄº
 
-	public static String FTP_EMS_STATION_PATH = "/on3000/data/MeteorologicalData";   //±Í ∂÷µ 
+	public static String FTP_EMS_STATION_PATH = "/on3000/data/MeteorologicalData";   //Ê†áËØÜÂÄº 
  
  
 	 
@@ -22,10 +22,10 @@ public class FtpUtilCommonsTest2 {
 		if(  !file.isDirectory() ){ 
 			file.mkdirs();
 		}
-		
-		FtpUtilCommons ftpUtil = new FtpUtilCommons();
-		ftpUtil.connectServer( FTP_EMS_IP , FTP_EMS_PORT , FTP_EMS_USERNAME, FTP_EMS_PW );
-		ftpUtil.downLoadFile( FILEPATH ,  FTP_EMS_STATION_PATH , "MeteorologicalData.xml" );
+//
+//		FtpUtilCommons ftpUtil = new FtpUtilCommons();
+//		ftpUtil.connectServer( FTP_EMS_IP , FTP_EMS_PORT , FTP_EMS_USERNAME, FTP_EMS_PW );
+//		ftpUtil.downLoadFile( FILEPATH ,  FTP_EMS_STATION_PATH , "MeteorologicalData.xml" );
 	}
 	
 }

@@ -1,6 +1,6 @@
 package thinkinjava.arrays;//: arrays/TestGenerated.java
-import thinkinjava.net.mindview.util.CountingGenerator;
-import thinkinjava.net.mindview.util.Generated;
+import net.mindview.util.CountingGenerator;
+import net.mindview.util.Generated;
 
 import java.util.Arrays;
 

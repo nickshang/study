@@ -1,4 +1,4 @@
-package net.jcip.examples;
+package com.shang.chapter8;
 
 import java.util.concurrent.*;
 
@@ -6,6 +6,7 @@ import java.util.concurrent.*;
  * MyThreadFactory
  * <p/>
  * Custom thread factory
+ * 定义线程名称
  *
  * @author Brian Goetz and Tim Peierls
  */

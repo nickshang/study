@@ -1,10 +1,10 @@
 package thinkinjava.typeinfo;
 //: typeinfo/SimpleProxyDemo.java
 
-import static  thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 /**
- * ½Ó¿Ú
+ * ï¿½Ó¿ï¿½
  */
 interface Interface {
     void doSomething();
@@ -13,7 +13,7 @@ interface Interface {
 }
 
 /**
- * ÕæÊµ¶ÔÏó
+ * ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½
  */
 class RealObject implements Interface {
     public void doSomething() {
@@ -26,7 +26,7 @@ class RealObject implements Interface {
 }
 
 /**
- * ´úÀí¶ÔÏó->´úÀíÕæÊµ¶ÔÏó
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½->ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½
  */
 class SimpleProxy implements Interface {
     private Interface proxied;
@@ -54,11 +54,11 @@ class SimpleProxyDemo {
 
 
     /**
-     * ²âÊÔ
+     * ï¿½ï¿½ï¿½ï¿½
      */
     public static void main(String[] args) {
-        consumer(new RealObject());                             //  ÒòÎªconsumer·½·¨½ÓÊÕµÄÊÇInterface½Ó¿Ú£¬´«ÈëÊÇnew RealObject()¡¢new SimpleProxy(new RealObject())
-        consumer(new SimpleProxy(new RealObject()));            //  ·½·¨ÄÚ²¿²»½øÐÐÇø·Ö
+        consumer(new RealObject());                             //  ï¿½ï¿½Îªconsumerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½Interfaceï¿½Ó¿Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½new RealObject()ï¿½ï¿½new SimpleProxy(new RealObject())
+        consumer(new SimpleProxy(new RealObject()));            //  ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     }
 } /* Output:
 doSomething

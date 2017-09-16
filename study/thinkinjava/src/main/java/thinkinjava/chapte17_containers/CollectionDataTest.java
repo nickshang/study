@@ -1,6 +1,8 @@
-//: containers/CollectionDataTest.java
+package thinkinjava.chapte17_containers;//: containers/CollectionDataTest.java
 import java.util.*;
-import net.mindview.util.*;
+
+import net.mindview.util.CollectionData;
+import net.mindview.util.Generator;
 
 class Government implements Generator<String> {
   String[] foundation = ("strange women lying in ponds " +

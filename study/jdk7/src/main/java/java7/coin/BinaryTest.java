@@ -1,26 +1,26 @@
 package java7.coin;
 
 /**
- * ¶þ½øÖÆ±íÊ¾·¨
+ * äºŒè¿›åˆ¶è¡¨ç¤ºæ³•
  */
 public class BinaryTest {
 
     public static void main(String[] args) {
 
-        // 0b ¶þ½øÖÆ
-        // 0o °Ë½øÖÆ
-        // 0x Ê®Áù½øÖÆ
+        // 0b äºŒè¿›åˆ¶
+        // 0o å…«è¿›åˆ¶
+        // 0x åå…­è¿›åˆ¶
 
         int x = 0b11;
-        System.out.println(x);  // ¶þ½øÖÆ -> 3
+        System.out.println(x);  // äºŒè¿›åˆ¶ -> 3
 
         x = 00011;
-        System.out.println(x);  // °Ë½øÖÆ -> 9
+        System.out.println(x);  // å…«è¿›åˆ¶ -> 9
 
         x = 0x11;
-        System.out.println(x);  // Ê®Áù½øÖÆ -> 17
+        System.out.println(x);  // åå…­è¿›åˆ¶ -> 17
 
-        // ÏÂ»®ÏßÊý×é±íÊ¾·¨
+        // ä¸‹åˆ’çº¿æ•°ç»„è¡¨ç¤ºæ³•
         long another = 2_147_483;
         int bitPatter = 0b1111_1111;
 

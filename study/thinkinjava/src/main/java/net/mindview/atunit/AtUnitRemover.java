@@ -5,7 +5,7 @@
 // {Requires: javassist.bytecode.ClassFile;
 // You must install the Javassist library from
 // http://sourceforge.net/projects/jboss/ }
-package mindview.atunit;
+package net.mindview.atunit;
 
 import javassist.ClassPool;
 import javassist.CtClass;
@@ -13,14 +13,15 @@ import javassist.CtMethod;
 import javassist.bytecode.AnnotationsAttribute;
 import javassist.bytecode.MethodInfo;
 import javassist.bytecode.annotation.Annotation;
-import mindview.util.BinaryFile;
-import mindview.util.ProcessFiles;
+import net.mindview.util.BinaryFile;
+import net.mindview.util.ProcessFiles;
+import net.mindview.util.Print;
 
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 
-import static mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 public class AtUnitRemover implements ProcessFiles.Strategy {
 	private static boolean remove = false;
@@ -51,7 +52,7 @@ public class AtUnitRemover implements ProcessFiles.Strategy {
 					continue;
 				for (Annotation ann : attr.getAnnotations()) {
 					if (ann.getTypeName().startsWith("net.mindview.atunit")) {
-						print(ctClass.getName() + " Method: " + mi.getName()
+						Print.print(ctClass.getName() + " Method: " + mi.getName()
 								+ " " + ann);
 						if (remove) {
 							ctClass.removeMethod(method);

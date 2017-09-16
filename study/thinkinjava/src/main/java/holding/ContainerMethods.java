@@ -1,4 +1,4 @@
-package thinkinjava.holding;//: holding/ContainerMethods.java
+package holding;//: holding/ContainerMethods.java
 import net.mindview.util.ContainerMethodDifferences;
 
 public class ContainerMethods {

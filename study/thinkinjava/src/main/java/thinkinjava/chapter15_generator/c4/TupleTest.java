@@ -1,6 +1,6 @@
 package thinkinjava.chapter15_generator.c4;
 
-import thinkinjava.net.mindview.util.TwoTuple;
+import net.mindview.util.TwoTuple;
 
 public class TupleTest {
 	

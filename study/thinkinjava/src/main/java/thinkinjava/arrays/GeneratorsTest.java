@@ -1,6 +1,7 @@
 package thinkinjava.arrays;//: arrays/GeneratorsTest.java
 
-import thinkinjava.net.mindview.util.*;
+import net.mindview.util.CountingGenerator;
+import net.mindview.util.Generator;
 
 public class GeneratorsTest {
     public static int size = 10;

@@ -18,7 +18,7 @@ public class T2 {
             Class.forName(dbdriver);
             return DriverManager.getConnection(database, dbusername, dbpassword);      
         }catch(Exception ex){
-            System.err.println("Êı¾İ¿âÇı¶¯ÎÄ¼ş´íÎó:" + ex.getMessage());
+            System.err.println("æ•°æ®åº“é©±åŠ¨æ–‡ä»¶é”™è¯¯:" + ex.getMessage());
            
         }
 		
@@ -35,28 +35,28 @@ public class T2 {
 		
 //		
 //		String str=null;
-//	    str=String.format("Hi, %s", "ÁÖ¼ÆÇÕ"); // ¸ñÊ½»¯×Ö·û´®
-//	    System.out.println(str); // Êä³ö×Ö·û´®±äÁ¿strµÄÄÚÈİ
-//	    System.out.printf("3>7µÄ½á¹ûÊÇ£º%b %n", 3>7);
-//	    System.out.printf("100µÄÒ»°ëÊÇ£º%d %n", 100/2);
-//	    System.out.printf("50ÔªµÄÊé´ò8.5ÕÛ¿ÛÊÇ£º%f Ôª%n", 50*0.85);
-//	    System.out.printf("ÉÏÃæµÄÕÛ¿ÛÊÇ%d%% %n", 85);
+//	    str=String.format("Hi, %s", "æ—è®¡é’¦"); // æ ¼å¼åŒ–å­—ç¬¦ä¸²
+//	    System.out.println(str); // è¾“å‡ºå­—ç¬¦ä¸²å˜é‡strçš„å†…å®¹
+//	    System.out.printf("3>7çš„ç»“æœæ˜¯ï¼š%b %n", 3>7);
+//	    System.out.printf("100çš„ä¸€åŠæ˜¯ï¼š%d %n", 100/2);
+//	    System.out.printf("50å…ƒçš„ä¹¦æ‰“8.5æŠ˜æ‰£æ˜¯ï¼š%f å…ƒ%n", 50*0.85);
+//	    System.out.printf("ä¸Šé¢çš„æŠ˜æ‰£æ˜¯%d%% %n", 85);
 	    
 //	    
 //	    String str=null;  
-//	    //$Ê¹ÓÃ  
-//	    str=String.format("¸ñÊ½²ÎÊı$µÄÊ¹ÓÃ£º%1$.1f,%2$.2f", 99.99,88.88);             
+//	    //$ä½¿ç”¨  
+//	    str=String.format("æ ¼å¼å‚æ•°$çš„ä½¿ç”¨ï¼š%1$.1f,%2$.2f", 99.99,88.88);             
 //	    System.out.println(str);                       
-//	    //+Ê¹ÓÃ  
-//	    System.out.printf("ÏÔÊ¾Õı¸ºÊıµÄ·ûºÅ£º%+dÓë%d%n", 99,-99);  
-//	    //²¹OÊ¹ÓÃ  
-//	    System.out.printf("×îÅ£µÄ±àºÅÊÇ£º%03d%n", 7);  
-//	    //¿Õ¸ñÊ¹ÓÃ  
-//	    System.out.printf("Tab¼üµÄĞ§¹ûÊÇ£º% 8d%n", 7);  
-//	    //.Ê¹ÓÃ  
-//	    System.out.printf("ÕûÊı·Ö×éµÄĞ§¹ûÊÇ£º%,d%n", 9989997);  
-//	    //¿Õ¸ñºÍĞ¡ÊıµãºóÃæ¸öÊı  
-//	    System.out.printf("Ò»±¾ÊéµÄ¼Û¸ñÊÇ£º% 50.5fÔª%n", 49.8);  
+//	    //+ä½¿ç”¨  
+//	    System.out.printf("æ˜¾ç¤ºæ­£è´Ÿæ•°çš„ç¬¦å·ï¼š%+dä¸%d%n", 99,-99);  
+//	    //è¡¥Oä½¿ç”¨  
+//	    System.out.printf("æœ€ç‰›çš„ç¼–å·æ˜¯ï¼š%03d%n", 7);  
+//	    //ç©ºæ ¼ä½¿ç”¨  
+//	    System.out.printf("Tabé”®çš„æ•ˆæœæ˜¯ï¼š% 8d%n", 7);  
+//	    //.ä½¿ç”¨  
+//	    System.out.printf("æ•´æ•°åˆ†ç»„çš„æ•ˆæœæ˜¯ï¼š%,d%n", 9989997);  
+//	    //ç©ºæ ¼å’Œå°æ•°ç‚¹åé¢ä¸ªæ•°  
+//	    System.out.printf("ä¸€æœ¬ä¹¦çš„ä»·æ ¼æ˜¯ï¼š% 50.5få…ƒ%n", 49.8);  
 	    
 		
 //		String url = "http://10.34.20.94:8080/reportServlet";
@@ -127,7 +127,7 @@ public class T2 {
 //		for( int i=0; i<max; i++ )
 //		{
 //			conns.add( t.getType( "" ) ); 
-//			System.out.println( "´ò¿ªÁ¬½Ó:" + i );
+//			System.out.println( "æ‰“å¼€è¿æ¥:" + i );
 //		}
 //		
 //		try {
@@ -140,7 +140,7 @@ public class T2 {
 //		for(Connection con:conns){
 //			try {
 //				con.close();
-//				System.out.println( "¹Ø±ÕÁ¬½Ó:" + z++ );
+//				System.out.println( "å…³é—­è¿æ¥:" + z++ );
 //			} catch (SQLException e) {
 //				e.printStackTrace();
 //			}

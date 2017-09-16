@@ -1,7 +1,8 @@
 package thinkinjava.arrays;//: arrays/FillingArrays.java
 // Using Arrays.fill()
 import java.util.*;
-import static thinkinjava.net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 public class FillingArrays {
   public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package shang.net;
 
-import com.shang.io.ReadFile;
+//import com.shang.io.ReadFile;
 
 import java.io.File;
 import java.util.regex.Matcher;
@@ -9,28 +9,28 @@ import java.util.regex.Pattern;
 public class RegxTest {
 	
 	public static void main(String[] args) {
-		
-		ReadFile readFile = new ReadFile();
-		String str = readFile.readFile( new File("c:\\avc.txt"),  null );
-
-		String regx2 = "#\\s*(.[^\\s*]*?)\\s*AVC(¶õÖİ¶şÆÚ)?×ÓÕ¾¿É¿Ø(\\(ÇàÈÈµç\\))?\\s*(.[^\\s*]?)\\s*([0|1])";
-		Matcher matcher2 = regx(regx2,  str);
-		int i = 0 ;
-		while( matcher2.find()){
-			i++;
-			System.out.println(  "-----------------------------------------"  );
-			System.out.println( i+ "-AVC:"+ matcher2.group(1) );
-			System.out.println( i+ "-KKE:"+ matcher2.group(4) );
-			System.out.println( i+ "-AVC:"+ matcher2.group(5) );
-			
-		}
+//
+//		ReadFile readFile = new ReadFile();
+//		String str = readFile.readFile( new File("c:\\avc.txt"),  null );
+//
+//		String regx2 = "#\\s*(.[^\\s*]*?)\\s*AVC(é„‚å·äºŒæœŸ)?å­ç«™å¯æ§(\\(é’çƒ­ç”µ\\))?\\s*(.[^\\s*]?)\\s*([0|1])";
+//		Matcher matcher2 = regx(regx2,  str);
+//		int i = 0 ;
+//		while( matcher2.find()){
+//			i++;
+//			System.out.println(  "-----------------------------------------"  );
+//			System.out.println( i+ "-AVC:"+ matcher2.group(1) );
+//			System.out.println( i+ "-KKE:"+ matcher2.group(4) );
+//			System.out.println( i+ "-AVC:"+ matcher2.group(5) );
+//
+//		}
 	
 	}
  
 	
 	
 	/**
-	 * ³ï½¨ÊÊÅäÆ÷
+	 * ç­¹å»ºé€‚é…å™¨
 	 * @param regex
 	 * @param sDetail
 	 * @return

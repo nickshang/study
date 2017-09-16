@@ -1,10 +1,10 @@
 package thinkinjava.containers;//: containers/LinkedHashMapDemo.java
 // What you can do with a LinkedHashMap.
-import thinkinjava.net.mindview.util.CountingMapData;
+import net.mindview.util.CountingMapData;
 
 import java.util.LinkedHashMap;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 public class LinkedHashMapDemo {
   public static void main(String[] args) {

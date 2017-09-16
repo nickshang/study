@@ -7,7 +7,7 @@ import java.util.zip.*;
 import java.io.*;
 import java.util.*;
 
-import static  thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 public class ZipCompress {
     public static void main(String[] args)

@@ -6,7 +6,8 @@ import java.nio.*;
 import java.nio.channels.*;
 import java.io.*;
 
-import static  thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 /**
  * 内存文件映射

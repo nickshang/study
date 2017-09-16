@@ -1,10 +1,10 @@
 package thinkinjava.chapte14_typeinfo;
 
+import static net.mindview.util.Print.print;
+
 /**
  * Created by Think on 2016/5/23.
  */
-
-import static thinkinjava.net.mindview.util.Print.*;
 
 interface HasBatteries {
 }

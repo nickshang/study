@@ -1,4 +1,4 @@
-package thinkinjava.holding;//: holding/UniqueWordsAlphabetic.java
+package holding;//: holding/UniqueWordsAlphabetic.java
 // Producing an alphabetic listing.
 import net.mindview.util.TextFile;
 

@@ -1,6 +1,6 @@
 package effectivejava.effectivejava.chapter67;
 
-import effectivejava.chapter16.ForwardingSet;
+import effectivejava.effectivejava.chapter16.ForwardingSet;
 
 import java.util.ArrayList;
 import java.util.Collection;

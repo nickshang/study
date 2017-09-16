@@ -1,6 +1,7 @@
 package thinkinjava.io;//: io/PreferencesDemo.java
 import java.util.prefs.*;
-import static  thinkinjava.net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 public class PreferencesDemo {
   public static void main(String[] args) throws Exception {

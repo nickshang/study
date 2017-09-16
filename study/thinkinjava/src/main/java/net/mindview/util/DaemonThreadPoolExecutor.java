@@ -1,5 +1,5 @@
 //: net/mindview/util/DaemonThreadPoolExecutor.java
-package mindview.util;
+package net.mindview.util;
 import java.util.concurrent.*;
 
 public class DaemonThreadPoolExecutor

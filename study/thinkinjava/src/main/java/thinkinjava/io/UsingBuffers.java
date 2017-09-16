@@ -2,7 +2,7 @@ package thinkinjava.io;//: io/UsingBuffers.java
 
 import java.nio.*;
 
-import static  thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 /**
  * 演示一个简单的算法（交换相邻字符），

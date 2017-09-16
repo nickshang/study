@@ -1,6 +1,8 @@
-package thinkinjava.holding;//: holding/PetMap.java
+package holding;//: holding/PetMap.java
 import thinkinjava.typeinfo.pets.*;
 import java.util.*;
+
+import static net.mindview.util.Print.print;
 
 public class PetMap {
   public static void main(String[] args) {

@@ -1,21 +1,21 @@
-package desginpatterns.factorymethod;
+ï»¿package desginpatterns.factorymethod;
 
 import java.util.ArrayList;
 
 /**
- * ¹¦ÄÜÃèÊö£º²úÆ·³éÏó
+ * åŠŸèƒ½æè¿°ï¼šäº§å“æŠ½è±¡
  * @author NICK
  *
  */
 public abstract class Pizza {
 	
-	// Ãû³Æ
+	// åç§°
 	String name;
 	
-	// ÉúÃæÍÅ
+	// ç”Ÿé¢å›¢
 	String dough;
 	
-	// µ÷Î¶Ö­
+	// è°ƒå‘³æ±
 	String sauce;
 	
 	ArrayList topping = new ArrayList();
@@ -32,21 +32,21 @@ public abstract class Pizza {
 	
 	
 	/**
-	 * ºæ±º
+	 * çƒ˜ç„™
 	 */
 	void bake(){
 		
 	}
 	
 	/**
-	 * ÇĞÆ¬
+	 * åˆ‡ç‰‡
 	 */
 	void cut(){
 		System.out.println("Bake for 25 minutes at 350.");
 	}
 	
 	/**
-	 * ´ò°ü
+	 * æ‰“åŒ…
 	 */
 	void box(){
 		System.out.println("Cutting the pizza int diagonal slices.");

@@ -1,15 +1,15 @@
 package thinkinjava.enumerated;//: enumerated/Reflection.java
 // Analyzing enums using reflection.
 
-import thinkinjava.net.mindview.util.OSExecute;
+import net.mindview.util.OSExecute;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.Set;
 import java.util.TreeSet;
 
-import static thinkinjava.net.mindview.util.Print.print;
-import static thinkinjava.net.mindview.util.Print.printnb;
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 enum Explore { HERE, THERE }
 

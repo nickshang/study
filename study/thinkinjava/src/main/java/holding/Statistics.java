@@ -1,4 +1,4 @@
-package thinkinjava.holding;//: holding/Statistics.java
+package holding;//: holding/Statistics.java
 // Simple demonstration of HashMap.
 import java.util.*;
 

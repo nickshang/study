@@ -5,19 +5,19 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Random;
 
-import thinkinjava.net.mindview.util.Generator;
+import net.mindview.util.Generator;
 
 /**
  * 
- * @类描述：泛型在匿名内部类中的使用 （构建服务员为依次为不同的客户进行服务）
+ * @锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟节诧拷锟斤拷锟叫碉拷使锟斤拷 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷员为锟斤拷锟斤拷为锟斤拷同锟侥客伙拷锟斤拷锟叫凤拷锟斤拷
  * 
- * @创建人：NICK
+ * @锟斤拷锟斤拷锟剿ｏ拷NICK
  * @mail sjshang@tsingsoft.com
- * @创建时间：2016年4月27日 下午10:25:18
+ * @锟斤拷锟斤拷时锟戒：2016锟斤拷4锟斤拷27锟斤拷 锟斤拷锟斤拷10:25:18
  * @version v1.0
  * @see [nothing]
  * @bug [nothing]
- * @Copyright 北京清软创新科技股份有限公司
+ * @Copyright 锟斤拷锟斤拷锟斤拷锟斤拷锟铰科硷拷锟缴凤拷锟斤拷锟睫癸拷司
  */
 public class BlankTeller {
 	public static void server(Teller t, Customer c){

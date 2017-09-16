@@ -1,4 +1,4 @@
-//: containers/MapDataTest.java
+package thinkinjava.chapte17_containers;//: containers/MapDataTest.java
 import java.util.*;
 import net.mindview.util.*;
 import static net.mindview.util.Print.*;

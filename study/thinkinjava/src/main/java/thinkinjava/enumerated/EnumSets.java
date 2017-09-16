@@ -5,7 +5,7 @@ package thinkinjava.enumerated;
 import java.util.EnumSet;
 
 import static thinkinjava.enumerated.AlarmPoints.*;
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 import static thinkinjava.enumerated.AlarmPoints.BATHROOM;
 
 /**

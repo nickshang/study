@@ -1,5 +1,6 @@
-package net.jcip.examples;
+package com.shang.chapter8;
 
+import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.*;
 import java.util.logging.*;
 
@@ -7,6 +8,7 @@ import java.util.logging.*;
  * MyAppThread
  * <p/>
  * Custom thread base class
+ * 定义线程类
  *
  * @author Brian Goetz and Tim Peierls
  */
@@ -23,7 +25,7 @@ public class MyAppThread extends Thread {
 
     public MyAppThread(Runnable runnable, String name) {
         super(runnable, name + "-" + created.incrementAndGet());
-        setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+        setUncaughtExceptionHandler(new UncaughtExceptionHandler() {
             public void uncaughtException(Thread t,
                                           Throwable e) {
                 log.log(Level.SEVERE,
@@ -34,6 +36,7 @@ public class MyAppThread extends Thread {
 
     public void run() {
         // Copy debug flag to ensure consistent value throughout.
+        // 复制debug标志，以确保一致的值
         boolean debug = debugLifecycle;
         if (debug) log.log(Level.FINE, "Created " + getName());
         try {

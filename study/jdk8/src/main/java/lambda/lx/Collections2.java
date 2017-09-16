@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 /**
- * 定义Collection的子接口
+ * 瀹氫箟Collection鐨勫瓙鎺ュ彛
  * Think on 2016/6/30.
  */
 public interface Collections2<E> extends Collection<E> {

@@ -17,18 +17,18 @@ import java.util.regex.Pattern;
 
 public class HttpCilent {
 
-	static final String LOGON_SITE = "192.168.0.228"; // Ä¸Ïß¸ººÉÔ¤²âÏµÍ³ IP
-	static final int LOGON_PORT = 8088; // Ä¸Ïß¸ººÉÔ¤²âÏµÍ³ ¶Ë¿Ú
-	static final String PROJECT_NAME = "/buslf"; // ²¿ÊğÏîÄ¿Ãû³Æ
+	static final String LOGON_SITE = "192.168.0.228"; // æ¯çº¿è´Ÿè·é¢„æµ‹ç³»ç»Ÿ IP
+	static final int LOGON_PORT = 8088; // æ¯çº¿è´Ÿè·é¢„æµ‹ç³»ç»Ÿ ç«¯å£
+	static final String PROJECT_NAME = "/buslf"; // éƒ¨ç½²é¡¹ç›®åç§°
 
-	static final String LOGIN_USERNAME = "admin"; // µÇÂ¼ÓÃ»§Ãû
-	static final String LOGIN_PASSWORD = "admintsingsoft"; // µÇÂ¼ÃÜÂë
-	static final String LOGIN_COMMAND = "UserLogin"; // µÇÂ¼¿ÚÁî
+	static final String LOGIN_USERNAME = "admin"; // ç™»å½•ç”¨æˆ·å
+	static final String LOGIN_PASSWORD = "admintsingsoft"; // ç™»å½•å¯†ç 
+	static final String LOGIN_COMMAND = "UserLogin"; // ç™»å½•å£ä»¤
 	
-	static final String DS_NAME = "»ÆÉ½"; // µÇÂ¼¿ÚÁî
+	static final String DS_NAME = "é»„å±±"; // ç™»å½•å£ä»¤
 	
-	static final String ZQL = "ZQL"; // ×¼È·ÂÊ
-	static final String HGL = "HGL"; // ºÏ¸ñÂÊ
+	static final String ZQL = "ZQL"; // å‡†ç¡®ç‡
+	static final String HGL = "HGL"; // åˆæ ¼ç‡
 	
 
 	public Map<String,String> get(String fromYear, String fromMonth, String fromDay) {
@@ -40,7 +40,7 @@ public class HttpCilent {
 			HttpClient client = new HttpClient();
 			client.getHostConfiguration().setHost(LOGON_SITE, LOGON_PORT);
 
-			//1.Ä£ÄâµÇÂ¼Ò³Ãæ
+			//1.æ¨¡æ‹Ÿç™»å½•é¡µé¢
 			PostMethod post = new PostMethod("/buslf/authorize");
 			NameValuePair name = new NameValuePair("userName", "admin");
 			NameValuePair pass = new NameValuePair("password", "admintsingsoft");
@@ -51,7 +51,7 @@ public class HttpCilent {
 			System.out.println(post.getResponseBodyAsString());
 			post.releaseConnection();
 
-			//2.²é¿´ cookie ĞÅÏ¢
+			//2.æŸ¥çœ‹ cookie ä¿¡æ¯
 			CookieSpec cookiespec = CookiePolicy.getDefaultSpec();
 			Cookie[] cookies = cookiespec.match(LOGON_SITE, LOGON_PORT, "/",
 					false, client.getState().getCookies());
@@ -63,7 +63,7 @@ public class HttpCilent {
 				}
 			}
 
-			//3.»ñÈ¡×¼È·ÂÊ
+			//3.è·å–å‡†ç¡®ç‡
 			String toYear = fromYear;
 			String toMonth = fromMonth;
 			String toDay = fromDay;
@@ -85,7 +85,7 @@ public class HttpCilent {
 			str.append("&fromDate=" + fromDate);
 			str.append("&toDate=" + toDate);
 
-			//4.»ñÈ¡Ò³ÃæHTML
+			//4.è·å–é¡µé¢HTML
 			GetMethod get = new GetMethod(str.toString());
 			client.executeMethod(get);
 			String html = get.getResponseBodyAsString() ;
@@ -93,7 +93,7 @@ public class HttpCilent {
 			System.out.println( get.getResponseBodyAsString() );
 			get.releaseConnection();
 			
-			//5.½âÎö×¼È·ÂÊ¡¢ºÏ¸ñÂÊ
+			//5.è§£æå‡†ç¡®ç‡ã€åˆæ ¼ç‡
 			String regx = "<td align='left'>&nbsp;"+DS_NAME+"</td>\\s*" + 
 			    "<td>(.*)&nbsp;</td>\\s*"+
 			    "<td>(.*)&nbsp;</td>";
@@ -114,7 +114,7 @@ public class HttpCilent {
 	}
 	
 	/**
-	 * ³ï½¨ÊÊÅäÆ÷
+	 * ç­¹å»ºé€‚é…å™¨
 	 * @param regex
 	 * @param sDetail
 	 * @return
@@ -129,8 +129,8 @@ public class HttpCilent {
 	public static void main(String[] args) {
 		HttpCilent cilent = new HttpCilent();
 		Map<String,String> map = cilent.get("2013", "08", "01");
-		System.out.println( "########×¼È·ÂÊ:"  + map.get( ZQL ) ); 
-		System.out.println( "########ºÏ¸ñÂÊ:"  + map.get( HGL ) ); 
+		System.out.println( "########å‡†ç¡®ç‡:"  + map.get( ZQL ) ); 
+		System.out.println( "########åˆæ ¼ç‡:"  + map.get( HGL ) ); 
 	}
 	
 	
@@ -139,7 +139,7 @@ public class HttpCilent {
 //		HttpClient client = new HttpClient();
 //		client.getHostConfiguration().setHost(LOGON_SITE, LOGON_PORT);
 //
-//		// Ä£ÄâµÇÂ¼Ò³Ãæ
+//		// æ¨¡æ‹Ÿç™»å½•é¡µé¢
 //		PostMethod post = new PostMethod("/buslf/authorize");
 //		NameValuePair name = new NameValuePair("userName", "admin");
 //		NameValuePair pass = new NameValuePair("password", "admintsingsoft");
@@ -150,7 +150,7 @@ public class HttpCilent {
 //		System.out.println(post.getResponseBodyAsString());
 //		post.releaseConnection();
 //
-//		// ²é¿´ cookie ĞÅÏ¢
+//		// æŸ¥çœ‹ cookie ä¿¡æ¯
 //		CookieSpec cookiespec = CookiePolicy.getDefaultSpec();
 //		Cookie[] cookies = cookiespec.match(LOGON_SITE, LOGON_PORT, "/", false,
 //				client.getState().getCookies());
@@ -162,7 +162,7 @@ public class HttpCilent {
 //			}
 //		}
 //
-//		// 2.»ñÈ¡¾ßÌåÒ³ÃæÊı¾İ
+//		// 2.è·å–å…·ä½“é¡µé¢æ•°æ®
 //		String fromYear = "2013";
 //		String fromMonth = "11";
 //		String fromDay = "21";
@@ -191,7 +191,7 @@ public class HttpCilent {
 //		// String s =
 //		// html.getHtmlByPost("http://192.168.0.228:8088/buslf/dainty?command=CheckDayOrder",pairs);
 //
-//		// ·ÃÎÊËùĞèµÄÒ³Ãæ main2.jsp
+//		// è®¿é—®æ‰€éœ€çš„é¡µé¢ main2.jsp
 //		GetMethod get = new GetMethod(str.toString());
 //		client.executeMethod(get);
 //		System.out.println(get.getResponseBodyAsString());
@@ -205,11 +205,11 @@ public class HttpCilent {
 	// NameValuePair password = new NameValuePair("password", "admintsingsoft");
 	//
 	// try {
-	// //1.µÇÂ¼ÏµÍ³
+	// //1.ç™»å½•ç³»ç»Ÿ
 	// html.HttpCilentLogin("http://192.168.0.228:8088/buslf/index.jsp",
 	// "gb2312", username, password);
 	//			
-	// //2.»ñÈ¡¾ßÌåÒ³ÃæÊı¾İ
+	// //2.è·å–å…·ä½“é¡µé¢æ•°æ®
 	// String fromYear = "2013";
 	// String fromMonth = "11";
 	// String fromDay = "21";

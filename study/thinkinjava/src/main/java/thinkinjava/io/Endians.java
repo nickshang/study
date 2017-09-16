@@ -4,7 +4,7 @@ package thinkinjava.io;//: io/Endians.java
 import java.nio.*;
 import java.util.*;
 
-import static  thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 /**
  *  通过字节存放模式设置来改变字符中的字节次序

@@ -1,6 +1,6 @@
 package thinkinjava.chapter21_concurrency.c9;
 
-import thinkinjava.net.mindview.util.Generator;
+import net.mindview.util.Generator;
 
 //: net/mindview/util/CountingGenerator.java
 // Simple generator implementations.

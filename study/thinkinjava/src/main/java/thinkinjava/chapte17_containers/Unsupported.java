@@ -1,4 +1,4 @@
-//: containers/Unsupported.java
+package thinkinjava.chapte17_containers;//: containers/Unsupported.java
 // Unsupported operations in Java containers.
 import java.util.*;
 

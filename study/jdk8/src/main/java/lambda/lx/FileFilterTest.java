@@ -3,19 +3,19 @@ package lambda.lx;
 import java.io.File;
 
 /**
- * Ê¹ÓÃjava.io.FileÀàµÄlist(FileFilter)ºÍisDirectoy·½·¨
- * ¾ßÓÐÖ¸¶¨À©Õ¹ÃûµÄËùÓÐÎÄ¼þ¡£
+ * ä½¿ç”¨java.io.Fileç±»çš„list(FileFilter)å’ŒisDirectoyæ–¹æ³•
+ * å…·æœ‰æŒ‡å®šæ‰©å±•åçš„æ‰€æœ‰æ–‡ä»¶ã€‚
  * Think on 2016/6/30.
  */
 public class FileFilterTest {
     public static void main(String[] args) {
 
-        // Ê¹ÓÃlambda±í´ïÊ½½øÐÐ¹ýÂË
+        // ä½¿ç”¨lambdaè¡¨è¾¾å¼è¿›è¡Œè¿‡æ»¤
         File file = new File("D:\\");
         String   postfix =  "txt";
         File[]  fs =  file.listFiles( (File f) -> { if(f.getName().contains(postfix)) {return true;} else return false; } );
         
-        // Êä³ö½á¹û
+        // è¾“å‡ºç»“æžœ
         for (int i = 0; i< fs.length ; i++) {
             System.out.println("f:" + fs[i].getName() );
         }

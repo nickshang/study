@@ -1,6 +1,6 @@
 package thinkinjava.chapter15_generator.c5;
 
-import thinkinjava.net.mindview.util.FourTuple;
+import net.mindview.util.FourTuple;
 
 import java.util.ArrayList;
 

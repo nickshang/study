@@ -1,4 +1,4 @@
-package thinkinjava.holding;//: holding/PriorityQueueDemo.java
+package holding;//: holding/PriorityQueueDemo.java
 import java.util.*;
 
 public class PriorityQueueDemo {

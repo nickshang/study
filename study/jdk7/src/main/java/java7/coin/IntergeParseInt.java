@@ -6,7 +6,7 @@ package java7.coin;
 public class IntergeParseInt {
 
     public static int ParseInt(String str){
-        // ·ÇÕı³£×Ö·û´¦Àí
+        // éæ­£å¸¸å­—ç¬¦å¤„ç†
 
         //
         char c ;

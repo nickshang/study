@@ -2,7 +2,7 @@ package thinkinjava.arrays;//: arrays/ContainerComparison.java
 
 import java.util.*;
 
-import static thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 class BerylliumSphere {
     private static long counter;

@@ -1,6 +1,6 @@
 package thinkinjava.chapte10_inner;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 /**
  * Created by Think on 2016/5/18.

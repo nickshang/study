@@ -1,4 +1,4 @@
-package net.jcip.examples;
+package com.shang.chapter8;
 
 import java.util.concurrent.*;
 
@@ -8,6 +8,7 @@ import net.jcip.annotations.*;
  * BoundedExecutor
  * <p/>
  * Using a Semaphore to throttle task submission
+ * 新信号量的上限为线程的大小加上可排队任务的数量
  *
  * @author Brian Goetz and Tim Peierls
  */

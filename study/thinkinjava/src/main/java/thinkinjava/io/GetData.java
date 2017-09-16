@@ -3,7 +3,8 @@ package thinkinjava.io;//: io/GetData.java
 
 import java.nio.*;
 
-import static  thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 public class GetData {
     private static final int BSIZE = 1024;

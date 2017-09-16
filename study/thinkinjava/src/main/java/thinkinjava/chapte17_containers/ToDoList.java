@@ -1,4 +1,4 @@
-//: containers/ToDoList.java
+package thinkinjava.chapte17_containers;//: containers/ToDoList.java
 // A more complex use of PriorityQueue.
 import java.util.*;
 

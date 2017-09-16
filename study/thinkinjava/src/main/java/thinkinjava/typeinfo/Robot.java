@@ -1,12 +1,12 @@
 package thinkinjava.typeinfo;
 //: typeinfo/Robot.java
 
-import thinkinjava.net.mindview.util.Null;
+import net.mindview.util.Null;
 
 import java.util.List;
 
 /**
- * »úÆ÷ÈË
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public interface Robot {
     String name();

@@ -1,6 +1,6 @@
 //: net/mindview/util/CountingMapData.java
 // Unlimited-length Map containing sample data.
-package mindview.util;
+package net.mindview.util;
 import java.util.*;
 
 public class CountingMapData

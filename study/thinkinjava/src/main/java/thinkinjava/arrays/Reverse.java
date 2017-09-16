@@ -1,12 +1,12 @@
 package thinkinjava.arrays;//: arrays/Reverse.java
 // The Collections.reverseOrder() Comparator
 
-import thinkinjava.net.mindview.util.Generated;
+import net.mindview.util.Generated;
 
 import java.util.Arrays;
 import java.util.Collections;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 // 使用自然
 public class Reverse {

@@ -60,7 +60,7 @@
     <java
      classname="AdapterMethodIdiom"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -69,7 +69,7 @@
     <java
      classname="AddingGroups"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -78,7 +78,7 @@
     <java
      classname="ApplesAndOrangesWithGenerics"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -87,7 +87,7 @@
     <java
      classname="ApplesAndOrangesWithoutGenerics"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="false"
      fork="true"/>
     <echo message="* Exception was expected *"/>
@@ -97,7 +97,7 @@
     <java
      classname="ArrayIsNotIterable"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -106,7 +106,7 @@
     <java
      classname="AsListInference"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -115,7 +115,7 @@
     <java
      classname="CollectionSequence"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -124,7 +124,7 @@
     <java
      classname="ContainerMethods"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -133,7 +133,7 @@
     <java
      classname="CrossContainerIteration"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -142,7 +142,7 @@
     <java
      classname="EnvironmentVariables"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -151,7 +151,7 @@
     <java
      classname="ForEachCollections"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -160,7 +160,7 @@
     <java
      classname="GenericsAndUpcasting"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -169,7 +169,7 @@
     <java
      classname="InterfaceVsIterator"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -178,7 +178,7 @@
     <java
      classname="IterableClass"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -187,7 +187,7 @@
     <java
      classname="LinkedListFeatures"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -196,7 +196,7 @@
     <java
      classname="ListFeatures"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -205,7 +205,7 @@
     <java
      classname="ListIteration"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -214,7 +214,7 @@
     <java
      classname="holding.MapOfList"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -223,7 +223,7 @@
     <java
      classname="ModifyingArraysAsList"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -232,7 +232,7 @@
     <java
      classname="MultiIterableClass"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -241,7 +241,7 @@
     <java
      classname="NonCollectionSequence"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -250,7 +250,7 @@
     <java
      classname="PetMap"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -259,7 +259,7 @@
     <java
      classname="PrintingContainers"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -268,7 +268,7 @@
     <java
      classname="PriorityQueueDemo"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -277,7 +277,7 @@
     <java
      classname="QueueDemo"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -286,7 +286,7 @@
     <java
      classname="SetOfInteger"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -295,7 +295,7 @@
     <java
      classname="SetOperations"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -304,7 +304,7 @@
     <java
      classname="SimpleCollection"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -313,7 +313,7 @@
     <java
      classname="SimpleIteration"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -322,7 +322,7 @@
     <java
      classname="SortedSetOfInteger"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -331,7 +331,7 @@
     <java
      classname="StackCollision"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -340,7 +340,7 @@
     <java
      classname="StackTest"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -349,7 +349,7 @@
     <java
      classname="Statistics"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -358,7 +358,7 @@
     <java
      classname="UniqueWords"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -367,7 +367,7 @@
     <java
      classname="UniqueWordsAlphabetic"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../holding/"
+     dir="/"
      failonerror="true"
      fork="true"/>
   </target>

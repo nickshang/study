@@ -1,4 +1,4 @@
-﻿package thinkinjava.chapter21_concurrency.c7;
+package thinkinjava.chapter21_concurrency.c7;
 
 import java.util.Calendar;
 import java.util.List;

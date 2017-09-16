@@ -1,4 +1,4 @@
-//: containers/Groundhog.java
+package thinkinjava.chapte17_containers;//: containers/Groundhog.java
 // Looks plausible, but doesn't work as a HashMap key.
 
 public class Groundhog {

@@ -2,7 +2,8 @@ package thinkinjava.containers;//: containers/SpringDetector.java
 // What will the weather be?
 import java.lang.reflect.*;
 import java.util.*;
-import static thinkinjava.net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 public class SpringDetector {
   // Uses a Groundhog or class derived from Groundhog:

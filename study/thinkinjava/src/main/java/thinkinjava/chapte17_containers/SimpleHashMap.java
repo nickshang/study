@@ -1,4 +1,4 @@
-//: containers/SimpleHashMap.java
+package thinkinjava.chapte17_containers;//: containers/SimpleHashMap.java
 // A demonstration hashed Map.
 import java.util.*;
 import net.mindview.util.*;
@@ -42,8 +42,8 @@ public class SimpleHashMap<K,V> extends AbstractMap<K,V> {
         return iPair.getValue();
     return null;
   }
-  public Set<Map.Entry<K,V>> entrySet() {
-    Set<Map.Entry<K,V>> set= new HashSet<Map.Entry<K,V>>();
+  public Set<Entry<K,V>> entrySet() {
+    Set<Entry<K,V>> set= new HashSet<Entry<K,V>>();
     for(LinkedList<MapEntry<K,V>> bucket : buckets) {
       if(bucket == null) continue;
       for(MapEntry<K,V> mpair : bucket)

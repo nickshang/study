@@ -1,11 +1,11 @@
 package thinkinjava.arrays;//: arrays/ComparatorTest.java
 // Implementing a Comparator for a class.
-import thinkinjava.net.mindview.util.Generated;
+import net.mindview.util.Generated;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 class CompTypeComparator implements Comparator<CompType> {
   public int compare(CompType o1, CompType o2) {

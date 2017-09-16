@@ -5,8 +5,8 @@ import java.nio.charset.Charset;
 import java.util.Iterator;
 import java.util.SortedMap;
 
-import static thinkinjava.net.mindview.util.Print.print;
-import static thinkinjava.net.mindview.util.Print.printnb;
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 public class AvailableCharSets {
     public static void main(String[] args) {

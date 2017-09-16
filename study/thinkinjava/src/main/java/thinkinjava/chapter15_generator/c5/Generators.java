@@ -1,6 +1,6 @@
 package thinkinjava.chapter15_generator.c5;
 
-import thinkinjava.net.mindview.util.Generator;
+import net.mindview.util.Generator;
 
 import java.util.List;
 import java.util.Queue;

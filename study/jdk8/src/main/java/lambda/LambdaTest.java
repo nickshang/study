@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.function.BiFunction;
 
 /**
- * lambdaÓï·¨ÊìÏ¤
+ * lambdaè¯­æ³•ç†Ÿæ‚‰
  * Think on 2016/6/28.
  */
 public class LambdaTest {
@@ -24,14 +24,14 @@ public class LambdaTest {
                 "Juan Martin Del Potro"};
         List<String> players =  Arrays.asList(atp);
 
-        // Ê¹ÓÃ lambda ±í´ïÊ½ÒÔ¼°º¯Êı²Ù×÷(functional operation)
+        // ä½¿ç”¨ lambda è¡¨è¾¾å¼ä»¥åŠå‡½æ•°æ“ä½œ(functional operation)
         players.forEach((player) -> System.out.print(player + "; "));
 
 
-        // ÔÚ Java 8 ÖĞÊ¹ÓÃË«Ã°ºÅ²Ù×÷·û(double colon operator)
+        // åœ¨ Java 8 ä¸­ä½¿ç”¨åŒå†’å·æ“ä½œç¬¦(double colon operator)
         players.forEach(System.out::println);
 
-        // 1.1 Ê¹ÓÃÄäÃûÄÚ²¿Àà¸ù¾İ name ÅÅĞò players
+        // 1.1 ä½¿ç”¨åŒ¿åå†…éƒ¨ç±»æ ¹æ® name æ’åº players
         Arrays.sort(atp, new Comparator<String>() {
             @Override
             public int compare(String s1, String s2) {
@@ -40,13 +40,13 @@ public class LambdaTest {
         });
 
 
-        // ÄäÃûÀà ÓÃlambda ±í´ïÊ½
+        // åŒ¿åç±» ç”¨lambda è¡¨è¾¾å¼
         Comparator<String> s = (first,second) -> first.length() - second.length();
         players.sort( s );
         System.out.println( "###out:" + players );
         Arrays.sort( atp  , (first,second) -> first.length() - second.length() );
 
-        // 1.1Ê¹ÓÃÄäÃûÄÚ²¿Àà
+        // 1.1ä½¿ç”¨åŒ¿åå†…éƒ¨ç±»
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -54,10 +54,10 @@ public class LambdaTest {
             }
         }).start();
 
-        // 1.2Ê¹ÓÃ lambda expression
+        // 1.2ä½¿ç”¨ lambda expression
         new Thread(() -> System.out.println("Hello world !")).start();
 
-        // 2.1Ê¹ÓÃÄäÃûÄÚ²¿Àà
+        // 2.1ä½¿ç”¨åŒ¿åå†…éƒ¨ç±»
         Runnable race1 = new Runnable() {
             @Override
             public void run() {
@@ -65,10 +65,10 @@ public class LambdaTest {
             }
         };
 
-        // 2.2Ê¹ÓÃ lambda expression
+        // 2.2ä½¿ç”¨ lambda expression
         Runnable race2 = () -> System.out.println("Hello world !");
 
-        // Ö±½Óµ÷ÓÃ run ·½·¨(Ã»¿ªĞÂÏß³ÌÅ¶!)
+        // ç›´æ¥è°ƒç”¨ run æ–¹æ³•(æ²¡å¼€æ–°çº¿ç¨‹å“¦!)
         race1.run();
         race2.run();
 
@@ -76,7 +76,7 @@ public class LambdaTest {
         BiFunction<String,String,Integer> comp = (first ,second) -> Integer.compare(first.length(),second.length());
 
 
-        // Ê¹ÓÃ·½·¨ÒıÓÃ£¬¶Ô
+        // ä½¿ç”¨æ–¹æ³•å¼•ç”¨ï¼Œå¯¹
         Arrays.sort(atp,String::compareToIgnoreCase);
 
 //        players.sort( comp );

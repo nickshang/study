@@ -1,13 +1,13 @@
 package thinkinjava.arrays;//: arrays/CompType.java
 // Implementing Comparable in a class.
 
-import thinkinjava.net.mindview.util.Generated;
-import thinkinjava.net.mindview.util.Generator;
+import net.mindview.util.Generated;
+import net.mindview.util.Generator;
 
 import java.util.Arrays;
 import java.util.Random;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 /**
  * 实现compareable接口，使类具有比较功能

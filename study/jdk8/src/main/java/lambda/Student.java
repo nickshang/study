@@ -13,7 +13,7 @@ public class Student implements Person, Named {
 }
 
 /**
- * 默认方法实例
+ * 榛樿鏂规硶瀹炰緥
  * Think on 2016/6/29.
  */
  interface Named {
@@ -25,7 +25,7 @@ public class Student implements Person, Named {
 
 
 /**
- * 默认方法实例
+ * 榛樿鏂规硶瀹炰緥
  * Think on 2016/6/29.
  */
  interface Person {

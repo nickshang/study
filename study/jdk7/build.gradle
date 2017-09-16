@@ -7,9 +7,33 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/releases/'
+    }
+    maven {
+        url 'http://central.maven.org/maven2/'
+    }
+
+
+    maven {
+        url 'https://maven.repository.redhat.com/ga/'
+    }
+
+    maven {
+        url 'http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/'
+    }
+
+
 }
 
 dependencies {
+
+    // https://mvnrepository.com/artifact/org.mozilla.intl/chardet
+    compile group: 'org.mozilla.intl', name: 'chardet', version: '1.0'
+
+
+// https://mvnrepository.com/artifact/org.objectweb.asm/com.springsource.org.objectweb.asm
     compile group: 'org.objectweb.asm', name: 'com.springsource.org.objectweb.asm', version: '2.2.3'
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

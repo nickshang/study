@@ -1,5 +1,5 @@
 //: net/mindview/util/ContainerMethodDifferences.java
-package mindview.util;
+package net.mindview.util;
 import java.lang.reflect.*;
 import java.util.*;
 

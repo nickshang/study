@@ -1,6 +1,6 @@
 package thinkinjava.chapte13_string;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 class Candy {
     static { print("Loading Candy"); }
@@ -15,18 +15,18 @@ class Cookie {
 }
 
 /**
- * ÑÝÊ¾Class¶ÔÏóµÄÊ¹ÓÃ¼°³õÊ¼»¯
+ * ï¿½ï¿½Ê¾Classï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¼ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
  */
 public class SweetShop {
     public static void main(String[] args) {
         print("inside main");
-        new Candy();                                //   Ö»ÓÐµÚÒ»´ÎÏµÍ³¶ÔÏóÊ±²Å»á³õÊ¼»¯¶ÔÏó¾²Ì¬Óò
-        new Candy();                                //   µÚ¶þ´ÎÊ¹ÓÃ²»»á³õÊ¼»¯¾²Ì¬Óò
+        new Candy();                                //   Ö»ï¿½Ðµï¿½Ò»ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Å»ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½
+        new Candy();                                //   ï¿½Ú¶ï¿½ï¿½ï¿½Ê¹ï¿½Ã²ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½
         print("After creating Candy");
         try {
-            Class c1 =  Class.forName("Gum");       //   »ñÈ¡Class¶ÔÏó
+            Class c1 =  Class.forName("Gum");       //   ï¿½ï¿½È¡Classï¿½ï¿½ï¿½ï¿½
 
-            Class c2 = Candy.class;                 //    »ñÈ¡Class¶ÔÏó
+            Class c2 = Candy.class;                 //    ï¿½ï¿½È¡Classï¿½ï¿½ï¿½ï¿½
 
         } catch(ClassNotFoundException e) {
             print("Couldn't find Gum");

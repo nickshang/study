@@ -1,6 +1,6 @@
 //: net/mindview/util/TypeCounter.java
 // Counts instances of a type family.
-package mindview.util;
+package net.mindview.util;
 
 import java.util.*;
 

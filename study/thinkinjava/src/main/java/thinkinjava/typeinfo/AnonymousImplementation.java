@@ -5,11 +5,11 @@ package thinkinjava.typeinfo;
 
 import thinkinjava.typeinfo.interfacea.*;
 
-import static thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 class AnonymousA {
     public static A makeA() {
-        //  ¶¨ÒåÎªÄäÃûÀà
+        //  ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         return new A() {
             public void f() {
                 print("public C.f()");

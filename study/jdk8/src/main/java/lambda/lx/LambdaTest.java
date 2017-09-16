@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * lambda±í´ïÊ½Ñ§Ï° -> lambda²¶»ñ±äÁ¿
+ * lambdaè¡¨è¾¾å¼å­¦ä¹  -> lambdaæ•è·å˜é‡
  * Think on 2016/6/30.
  */
 public class LambdaTest {
@@ -12,12 +12,12 @@ public class LambdaTest {
         String[] names = {"perter","paul","mary"};
         List<Runnable> runners = new ArrayList<>();
 
-        // Ğ´·¨1
+        // å†™æ³•1
 //        for (String name : names){
 //            runners.add( () -> System.out.println(name) ) ;
 //        }
 
-        // Ğ´·¨2
+        // å†™æ³•2
         for (int i = 0 ; i < names.length; i++){
             String _name = names[i];
             runners.add( () -> System.out.println(_name) ) ;

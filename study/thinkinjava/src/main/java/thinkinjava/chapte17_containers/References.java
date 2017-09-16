@@ -1,4 +1,4 @@
-//: containers/References.java
+package thinkinjava.chapte17_containers;//: containers/References.java
 // Demonstrates Reference objects
 import java.lang.ref.*;
 import java.util.*;

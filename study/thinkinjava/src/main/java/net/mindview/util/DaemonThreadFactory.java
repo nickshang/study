@@ -1,5 +1,5 @@
 //: net/mindview/util/DaemonThreadFactory.java
-package mindview.util;
+package net.mindview.util;
 import java.util.concurrent.*;
 
 public class DaemonThreadFactory implements ThreadFactory {

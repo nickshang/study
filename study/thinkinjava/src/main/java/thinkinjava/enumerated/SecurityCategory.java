@@ -1,7 +1,7 @@
 package thinkinjava.enumerated;//: enumerated/SecurityCategory.java
 // More succinct subcategorization of enums.
 
-import  thinkinjava.net.mindview.util.*;
+import net.mindview.util.Enums;
 
 enum SecurityCategory {
     STOCK(Security.Stock.class),

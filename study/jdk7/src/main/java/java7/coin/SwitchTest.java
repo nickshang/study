@@ -1,7 +1,7 @@
 package java7.coin;
 
 /**
- * switchÓï¾äÖĞString
+ * switchè¯­å¥ä¸­String
  */
 public class SwitchTest {
 

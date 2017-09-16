@@ -4,8 +4,9 @@ package thinkinjava.enumerated;
 
 import java.util.*;
 
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 import static thinkinjava.enumerated.AlarmPoints.*;
-import static thinkinjava.net.mindview.util.Print.*;
 
 /**
  * 命令设计模式的使用

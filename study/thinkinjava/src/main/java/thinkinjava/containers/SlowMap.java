@@ -1,6 +1,6 @@
 package thinkinjava.containers;//: containers/SlowMap.java
 // A Map implemented with ArrayLists.
-import thinkinjava.net.mindview.util.Countries;
+import net.mindview.util.Countries;
 
 import java.util.*;
 

@@ -1,13 +1,13 @@
 package thinkinjava.arrays;//: arrays/StringSorting.java
 // Sorting an array of Strings.
 
-import thinkinjava.net.mindview.util.Generated;
-import thinkinjava.net.mindview.util.RandomGenerator;
+import net.mindview.util.Generated;
+import net.mindview.util.RandomGenerator;
 
 import java.util.Arrays;
 import java.util.Collections;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 public class StringSorting {
     public static void main(String[] args) {

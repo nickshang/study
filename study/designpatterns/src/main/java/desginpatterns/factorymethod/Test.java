@@ -1,13 +1,13 @@
-package desginpatterns.factorymethod;
+锘縫ackage desginpatterns.factorymethod;
 
 public class Test {
 	public static void main(String[] args) {
 		
-		//定纽约风味Pizza
+		//瀹氱航绾﹂鍛砅izza
 		PizzaStore nyStore = new NYPizzaStroe();
 		nyStore.orderPizza(PizzaStore.Type.cheese);
 		
-		//定芝加哥风味Pizza
+		//瀹氳姖鍔犲摜椋庡懗Pizza
 		PizzaStore chicagoStore = new ChicagoPizzaStroe();
 		chicagoStore.orderPizza(PizzaStore.Type.cheese);
 	}

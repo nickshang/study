@@ -1,4 +1,4 @@
-﻿package thinkinjava.chapte11_holding;
+package thinkinjava.chapte11_holding;
 
 import thinkinjava.typeinfo.pets.Pet;
 import thinkinjava.typeinfo.pets.Pets;

@@ -1,7 +1,6 @@
 package thinkinjava.arrays;//: arrays/RandomGeneratorsTest.java
 
-import thinkinjava.arrays.GeneratorsTest;
-import thinkinjava.net.mindview.util.RandomGenerator;
+import net.mindview.util.RandomGenerator;
 
 public class RandomGeneratorsTest {
   public static void main(String[] args) {

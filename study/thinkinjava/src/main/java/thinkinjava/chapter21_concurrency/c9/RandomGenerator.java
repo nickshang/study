@@ -3,7 +3,7 @@ package thinkinjava.chapter21_concurrency.c9;
 //: net/mindview/util/RandomGenerator.java
 //Generators that produce random values.
 
-import thinkinjava.net.mindview.util.Generator;
+import net.mindview.util.Generator;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package net.jcip.examples;
+package com.shang.chapter8;
 
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
@@ -8,6 +8,7 @@ import java.util.logging.*;
  * TimingThreadPool
  * <p/>
  * Thread pool extended with logging and timing
+ * 为Thread pool extended 扩展添加了日志和统计等功能
  *
  * @author Brian Goetz and Tim Peierls
  */

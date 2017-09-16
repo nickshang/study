@@ -1,4 +1,4 @@
-//: containers/ReadOnly.java
+package thinkinjava.chapte17_containers;//: containers/ReadOnly.java
 // Using the Collections.unmodifiable methods.
 import java.util.*;
 import net.mindview.util.*;

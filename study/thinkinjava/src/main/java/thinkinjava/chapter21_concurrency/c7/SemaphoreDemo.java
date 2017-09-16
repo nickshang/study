@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  * @author NICK
  *
  */
-public class SemaphoreDemoT {
+public class SemaphoreDemo {
 
     final static int SIZE = 25;
 

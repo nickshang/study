@@ -1,4 +1,4 @@
-package thinkinjava.holding;//: holding/ModifyingArraysAsList.java
+package holding;//: holding/ModifyingArraysAsList.java
 import java.util.*;
 
 public class ModifyingArraysAsList {

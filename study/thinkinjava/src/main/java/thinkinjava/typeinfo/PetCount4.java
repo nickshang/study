@@ -1,9 +1,10 @@
 package thinkinjava.typeinfo;
 //: typeinfo/PetCount4.java
+import net.mindview.util.TypeCounter;
 import  thinkinjava.typeinfo.pets.*;
-import  thinkinjava.net.mindview.util.*;
-import static  thinkinjava.net.mindview.util.Print.*;
-import static thinkinjava.net.mindview.util.Print.printnb;
+
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 public class PetCount4 {
   public static void main(String[] args) {

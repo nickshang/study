@@ -1,4 +1,4 @@
-//: containers/FailFast.java
+package thinkinjava.chapte17_containers;//: containers/FailFast.java
 // Demonstrates the "fail-fast" behavior.
 import java.util.*;
 

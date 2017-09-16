@@ -1,5 +1,5 @@
 //: net/mindview/util/Hex.java
-package mindview.util;
+package net.mindview.util;
 import java.io.*;
 
 public class Hex {

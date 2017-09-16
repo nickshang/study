@@ -5,7 +5,8 @@ package thinkinjava.typeinfo;
 // {Args: ShowMethods}
 import java.lang.reflect.*;
 import java.util.regex.*;
-import static  thinkinjava.net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 public class ShowMethods {
   private static String usage =

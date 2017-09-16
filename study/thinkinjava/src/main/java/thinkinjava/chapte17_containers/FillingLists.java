@@ -1,4 +1,4 @@
-//: containers/FillingLists.java
+package thinkinjava.chapte17_containers;//: containers/FillingLists.java
 // The Collections.fill() & Collections.nCopies() methods.
 import java.util.*;
 

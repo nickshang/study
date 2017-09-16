@@ -1,4 +1,4 @@
-﻿package thinkinjava.chapter21_concurrency.c2;
+package thinkinjava.chapter21_concurrency.c2;
 
 /**
  * 功能描述：设置线程优先级，打印现场的输出结果，进行简单测试实现。

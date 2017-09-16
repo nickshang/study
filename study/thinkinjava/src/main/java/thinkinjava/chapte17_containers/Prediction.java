@@ -1,4 +1,4 @@
-//: containers/Prediction.java
+package thinkinjava.chapte17_containers;//: containers/Prediction.java
 // Predicting the weather with groundhogs.
 import java.util.*;
 

@@ -2,7 +2,7 @@
 // Produce a sequence of File objects that match a
 // regular expression in either a local directory,
 // or by walking a directory tree.
-package mindview.util;
+package net.mindview.util;
 
 import java.io.File;
 import java.io.FilenameFilter;

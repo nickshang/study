@@ -1,6 +1,6 @@
 package thinkinjava.containers;//: containers/Enumerations.java
 // Java 1.0/1.1 Vector and Enumeration.
-import thinkinjava.net.mindview.util.Countries;
+import net.mindview.util.Countries;
 
 import java.util.ArrayList;
 import java.util.Collections;

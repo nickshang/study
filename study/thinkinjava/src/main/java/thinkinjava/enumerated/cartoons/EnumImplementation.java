@@ -2,7 +2,7 @@
 // An enum can implement an interface
 package thinkinjava.enumerated.cartoons;
 
-import thinkinjava.net.mindview.util.Generator;
+import net.mindview.util.Generator;
 
 import java.util.Random;
 

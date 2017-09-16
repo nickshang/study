@@ -1,4 +1,4 @@
-//: containers/TestParam.java
+package thinkinjava.chapte17_containers;//: containers/TestParam.java
 // A "data transfer object."
 
 public class TestParam {

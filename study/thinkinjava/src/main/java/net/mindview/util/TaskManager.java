@@ -1,6 +1,6 @@
 //: net/mindview/util/TaskManager.java
 // Managing and executing a queue of tasks.
-package mindview.util;
+package net.mindview.util;
 
 import java.util.ArrayList;
 import java.util.Iterator;

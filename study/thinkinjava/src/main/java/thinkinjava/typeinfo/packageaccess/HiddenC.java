@@ -4,9 +4,9 @@ package thinkinjava.typeinfo.packageaccess;
 
 import thinkinjava.typeinfo.interfacea.A;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
-// C¶¨ÒåÎªÈ±Ê¡µÄ·ÃÎÊÈ¨ÏŞ£¬Ö»ÄÜÔÚ±¾ÀàºÍ°üÄÚ·ÃÎÊ
+// Cï¿½ï¿½ï¿½ï¿½ÎªÈ±Ê¡ï¿½Ä·ï¿½ï¿½ï¿½È¨ï¿½Ş£ï¿½Ö»ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½Í°ï¿½ï¿½Ú·ï¿½ï¿½ï¿½
 class C implements A {
     /**
      * NAME

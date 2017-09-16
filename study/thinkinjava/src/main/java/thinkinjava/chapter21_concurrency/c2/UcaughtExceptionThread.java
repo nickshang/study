@@ -1,4 +1,4 @@
-﻿package thinkinjava.chapter21_concurrency.c2;
+package thinkinjava.chapter21_concurrency.c2;
 
 import java.lang.Thread.UncaughtExceptionHandler;
 import java.util.concurrent.ExecutorService;

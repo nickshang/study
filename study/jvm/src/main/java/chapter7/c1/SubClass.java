@@ -1,4 +1,4 @@
-package chapter7;
+package chapter7.c1;
 
 /**
  * Created by Think on 2017/9/12.

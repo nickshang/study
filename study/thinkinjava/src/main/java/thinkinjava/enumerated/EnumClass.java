@@ -1,7 +1,8 @@
 package thinkinjava.enumerated;//: enumerated/EnumClass.java
 // Capabilities of the Enum class
 
-import static thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 enum Shrubbery {GROUND, CRAWLING, HANGING}
 

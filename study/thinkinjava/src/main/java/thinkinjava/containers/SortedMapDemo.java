@@ -1,11 +1,11 @@
 package thinkinjava.containers;//: containers/SortedMapDemo.java
 // What you can do with a TreeMap.
-import thinkinjava.net.mindview.util.CountingMapData;
+import net.mindview.util.CountingMapData;
 
 import java.util.Iterator;
 import java.util.TreeMap;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 public class SortedMapDemo {
   public static void main(String[] args) {

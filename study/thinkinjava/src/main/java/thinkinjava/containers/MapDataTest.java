@@ -1,7 +1,7 @@
 package thinkinjava.containers;//: containers/MapDataTest.java
 
-import thinkinjava.net.mindview.util.Generator;
-import thinkinjava.net.mindview.util.Pair;
+import net.mindview.util.Generator;
+import net.mindview.util.Pair;
 
 import java.util.ArrayList;
 import java.util.Collection;

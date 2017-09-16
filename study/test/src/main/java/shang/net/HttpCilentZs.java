@@ -19,20 +19,20 @@ import java.util.regex.Pattern;
  */
 public class HttpCilentZs {
 
-	public static final String LOGON_SITE = "www.zshyqx.com"; // ÖÛÉ½ÆøÏó¾ÖÍøÕ¾
-	public static final int LOGON_PORT = 80; //  ¶Ë¿Ú 
+	public static final String LOGON_SITE = "www.zshyqx.com"; // èˆŸå±±æ°”è±¡å±€ç½‘ç«™
+	public static final int LOGON_PORT = 80; //  ç«¯å£ 
 
-	public static final String LOGIN_USERNAME = "zsdw"; // µÇÂ¼ÓÃ»§Ãû
-	public static final String LOGIN_PASSWORD = "zsdw"; // µÇÂ¼ÃÜÂë 
+	public static final String LOGIN_USERNAME = "zsdw"; // ç™»å½•ç”¨æˆ·å
+	public static final String LOGIN_PASSWORD = "zsdw"; // ç™»å½•å¯†ç  
 	
-	public static final String temperature = "temperature"; // ÎÂ¶È
-	public static final String rainfall  = "rainfall"; // ½µÓêÁ¿ 
+	public static final String temperature = "temperature"; // æ¸©åº¦
+	public static final String rainfall  = "rainfall"; // é™é›¨é‡ 
 	
-	public static final String humidity = "humidity"; // Êª¶È
-	public static final String pressure = "pressure"; // ÆøÑ¹
+	public static final String humidity = "humidity"; // æ¹¿åº¦
+	public static final String pressure = "pressure"; // æ°”å‹
 	
-	public static final String windspeed = "windspeed"; // ·çËÙ
-	public static final String winddirection = "winddirection"; // ·çÏò
+	public static final String windspeed = "windspeed"; // é£é€Ÿ
+	public static final String winddirection = "winddirection"; // é£å‘
 
 	public Map<String,String> get(String fromYear, String fromMonth, String fromDay,  String fromhour , String standid ) {
 		Map<String,String> result = new HashMap<String, String>();
@@ -44,7 +44,7 @@ public class HttpCilentZs {
 			HttpClient client = new HttpClient(); 
 			client.getHostConfiguration().setHost( uri );
 
-			//1.Ä£ÄâµÇÂ¼Ò³Ãæ
+			//1.æ¨¡æ‹Ÿç™»å½•é¡µé¢
 			PostMethod post = new PostMethod("/logon_new.asp");
 			NameValuePair name = new NameValuePair("username",  LOGIN_USERNAME );
 			NameValuePair pass = new NameValuePair("id",  LOGIN_PASSWORD ); 
@@ -54,11 +54,11 @@ public class HttpCilentZs {
 
 			post.setRequestBody(new NameValuePair[] { name, pass, x ,   y });
 			int status = client.executeMethod(post);
-			System.out.println( "############»ñÈ¡Ò³Ãæ#############"  );
+			System.out.println( "############è·å–é¡µé¢#############"  );
 			System.out.println(post.getResponseBodyAsString());
 			post.releaseConnection();
 
-			//2.²é¿´ cookie ĞÅÏ¢
+			//2.æŸ¥çœ‹ cookie ä¿¡æ¯
 //			CookieSpec cookiespec = CookiePolicy.getDefaultSpec();
 //			Cookie[] cookies = cookiespec.match(LOGON_SITE, LOGON_PORT, "/",
 //					false, client.getState().getCookies());
@@ -70,7 +70,7 @@ public class HttpCilentZs {
 //				}
 //			} 
 			
-			//3.»ñÈ¡Ò³ÃæHTML
+			//3.è·å–é¡µé¢HTML
 			StringBuffer str = new StringBuffer();
 			str.append("http://" + LOGON_SITE + ":" + LOGON_PORT + "/zsdw/qxdb.asp?station=" + standid );
 			post = new PostMethod(  str.toString()  );
@@ -86,11 +86,11 @@ public class HttpCilentZs {
 			client.getParams().setContentCharset("GBK");
 			status = client.executeMethod(post);
 			String html = post.getResponseBodyAsString() ;
-			System.out.println( "############»ñÈ¡Ò³Ãæ#############"  );
+			System.out.println( "############è·å–é¡µé¢#############"  );
 			System.out.println(post.getResponseBodyAsString());
 			post.releaseConnection();
 			
-//			//3.»ñÈ¡Ò³ÃæHTML
+//			//3.è·å–é¡µé¢HTML
 //			StringBuffer str = new StringBuffer();
 //			str.append("http://" + LOGON_SITE + ":" + LOGON_PORT + "/zsdw/qxdb.asp?station=" + standid );
 //			str.append("&c_year=" + fromYear);
@@ -108,11 +108,11 @@ public class HttpCilentZs {
 //			System.out.println( new String(get.getResponseBodyAsString().getBytes() , "GBK").toString() );
 //			get.releaseConnection();
 			
-			//5.½âÎö 
+			//5.è§£æ 
 			String regx = "<tr align=\"center\" valign=\"middle\">\\s*"
-                  +"<td height=\"30\" bgcolor=\"#99CCFF\">ÆøÎÂ</td>\\s*"
+                  +"<td height=\"30\" bgcolor=\"#99CCFF\">æ°”æ¸©</td>\\s*"
                   +"<td height=\"30\" bgcolor=\"#CCCC66\">\\s*(.*)\\s*</td>\\s*" 
-                  +"<td height=\"30\" bgcolor=\"#99CCFF\">ÓêÁ¿</td>\\s*"
+                  +"<td height=\"30\" bgcolor=\"#99CCFF\">é›¨é‡</td>\\s*"
                   +"<td height=\"30\" bgcolor=\"#CCCC66\">\\s*(.*)\\s*</td>";;
 			Matcher matcher = regx(regx, html);
 			if(matcher.find()){
@@ -121,17 +121,17 @@ public class HttpCilentZs {
 			}
 			
 			
-			//5.½âÎö 
+			//5.è§£æ 
 			 regx = " <tr align=\"center\" valign=\"middle\">\\s*" +
-                  "<td height=\"30\" bgcolor=\"#99CCFF\">Ë²Ê±·çÏò</td>\\s*"+
+                  "<td height=\"30\" bgcolor=\"#99CCFF\">ç¬æ—¶é£å‘</td>\\s*"+
                   "<td height=\"30\" bgcolor=\"#CCCC66\">\\s*(.*)\\s*</td>\\s*"+
-                  "<td height=\"30\" bgcolor=\"#99CCFF\">ÆøÑ¹</td>\\s*"+
+                  "<td height=\"30\" bgcolor=\"#99CCFF\">æ°”å‹</td>\\s*"+
                   "<td height=\"30\" bgcolor=\"#CCCC66\">\\s*(.*)\\s*</td>\\s*"+
-                  "<td height=\"30\" bgcolor=\"#99CCFF\">ÈÕ×î¸ßÆøÎÂ</td>\\s*"+
+                  "<td height=\"30\" bgcolor=\"#99CCFF\">æ—¥æœ€é«˜æ°”æ¸©</td>\\s*"+
                   "<td height=\"30\" bgcolor=\"#CCCC66\">\\s*(.*)\\s*</td>\\s*"+
                 "</tr>\\s*"+
                 "<tr align=\"center\" valign=\"middle\">\\s*"+
-                  "<td height=\"30\" bgcolor=\"#99CCFF\">Ë²Ê±·çËÙ</td>\\s*"+
+                  "<td height=\"30\" bgcolor=\"#99CCFF\">ç¬æ—¶é£é€Ÿ</td>\\s*"+
                   "<td height=\"30\" bgcolor=\"#CCCC66\">\\s*(.*)\\s*</td>"; 
 			 matcher = regx(regx, html);
 			if(matcher.find()){
@@ -140,8 +140,8 @@ public class HttpCilentZs {
 				result.put( windspeed ,   matcher.group(4) ); 
 			}
 			 
-			//5.½âÎö 
-			 regx = " <td height=\"30\" bgcolor=\"#99CCFF\">Ïà¶ÔÊª¶È</td>\\s*"+
+			//5.è§£æ 
+			 regx = " <td height=\"30\" bgcolor=\"#99CCFF\">ç›¸å¯¹æ¹¿åº¦</td>\\s*"+
                   "<td height=\"30\" bgcolor=\"#CCCC66\">\\s*(.*)\\s*</td>"; 
 			 matcher = regx(regx, html);
 			if(matcher.find()){
@@ -159,7 +159,7 @@ public class HttpCilentZs {
 	}
 	
 	/**
-	 * ³ï½¨ÊÊÅäÆ÷
+	 * ç­¹å»ºé€‚é…å™¨
 	 * @param regex
 	 * @param sDetail
 	 * @return
@@ -177,12 +177,12 @@ public class HttpCilentZs {
 		HttpCilentZs cilent = new HttpCilentZs();
 		Map<String,String> map = cilent.get( "2014", "12", "01","14","58477" ); 
 		 
-		System.out.println( "ÎÂ¶È:" +  map.get("temperature") );
-		System.out.println( "½µÓêÁ¿:" + map.get("rainfall")  );
-		System.out.println( "Êª¶È:" + map.get("humidity") );
-		System.out.println( "ÆøÑ¹:" +  map.get("pressure")  );
-		System.out.println( "·çËÙ:" +  map.get("windspeed")  );
-		System.out.println( "·çÏò:" + map.get("winddirection")  );
+		System.out.println( "æ¸©åº¦:" +  map.get("temperature") );
+		System.out.println( "é™é›¨é‡:" + map.get("rainfall")  );
+		System.out.println( "æ¹¿åº¦:" + map.get("humidity") );
+		System.out.println( "æ°”å‹:" +  map.get("pressure")  );
+		System.out.println( "é£é€Ÿ:" +  map.get("windspeed")  );
+		System.out.println( "é£å‘:" + map.get("winddirection")  );
 		
 	}
 	 

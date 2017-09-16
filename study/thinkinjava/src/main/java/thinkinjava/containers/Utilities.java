@@ -1,7 +1,8 @@
 package thinkinjava.containers;//: containers/Utilities.java
 // Simple demonstrations of the Collections utilities.
 import java.util.*;
-import static thinkinjava.net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 public class Utilities {
   static List<String> list = Arrays.asList(

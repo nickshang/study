@@ -1,4 +1,4 @@
-package thinkinjava.holding;//: holding/CollectionSequence.java
+package holding;//: holding/CollectionSequence.java
 
 import thinkinjava.typeinfo.pets.Pet;
 import thinkinjava.typeinfo.pets.Pets;
@@ -24,8 +24,8 @@ extends AbstractCollection<Pet> {
   }	
   public static void main(String[] args) {
     CollectionSequence c = new CollectionSequence();
-    thinkinjava.holding.InterfaceVsIterator.display(c);
-    thinkinjava.holding.InterfaceVsIterator.display(c.iterator());
+    holding.InterfaceVsIterator.display(c);
+    holding.InterfaceVsIterator.display(c.iterator());
   }
 } /* Output:
 0:Rat 1:Manx 2:Cymric 3:Mutt 4:Pug 5:Cymric 6:Pug 7:Manx

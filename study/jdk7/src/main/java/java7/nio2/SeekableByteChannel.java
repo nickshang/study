@@ -9,25 +9,25 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 /**
- * SeekableByteChannel½Ó¿Ú
- * ¶ÔÎÄ¼ş×Ö½ÚÍ¨µÀ½øĞĞ¶¨Î»»ñÈ¡
+ * SeekableByteChannelæ¥å£
+ * å¯¹æ–‡ä»¶å­—èŠ‚é€šé“è¿›è¡Œå®šä½è·å–
  * Think on 2016/6/24.
  */
 public class SeekableByteChannel {
 
     public static void main(String[] args) throws UnsupportedEncodingException {
 
-        // ´´½¨Â·¾¶
+        // åˆ›å»ºè·¯å¾„
         Path logfile = Paths.get("D:\\log.log");
 
-        // »º³åÆ÷
+        // ç¼“å†²å™¨
         ByteBuffer buffer = ByteBuffer.allocate(1024);
 
         try {
-            // »ñÈ¡ÎÄ¼ş×Ö½ÚÍ¨µÀ
+            // è·å–æ–‡ä»¶å­—èŠ‚é€šé“
             FileChannel channel = FileChannel.open(logfile, StandardOpenOption.READ);
 
-            // ¶ÔÎÄ¼ş×Ö½ÚÍ¨µÀ½øĞĞ¶¨Î»»ñÈ¡
+            // å¯¹æ–‡ä»¶å­—èŠ‚é€šé“è¿›è¡Œå®šä½è·å–
             channel.read(buffer,channel.size() -1000);
 
         } catch (IOException e) {

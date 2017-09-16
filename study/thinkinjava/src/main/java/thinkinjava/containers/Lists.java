@@ -1,12 +1,12 @@
 package thinkinjava.containers;//: containers/Lists.java
 // Things you can do with Lists.
 
-import thinkinjava.net.mindview.util.Countries;
+import net.mindview.util.Countries;
 
 import java.util.*;
 
-import static thinkinjava.net.mindview.util.Print.print;
-import static thinkinjava.net.mindview.util.Print.printnb;
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 /**
  * List功能的实例实例

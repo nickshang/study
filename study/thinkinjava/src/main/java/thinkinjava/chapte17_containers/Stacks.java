@@ -1,4 +1,4 @@
-//: containers/Stacks.java
+package thinkinjava.chapte17_containers;//: containers/Stacks.java
 // Demonstration of Stack Class.
 import java.util.*;
 import static net.mindview.util.Print.*;

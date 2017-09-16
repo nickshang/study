@@ -1,6 +1,7 @@
 package com.shang.chapter15;
 
 import java.util.HashMap;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.*;
 
 import net.jcip.annotations.*;
@@ -9,7 +10,7 @@ import net.jcip.annotations.*;
  * LinkedQueue
  * <p/>
  * Insertion in the Michael-Scott nonblocking queue algorithm
- * 非阻塞算法中的插入算法
+ * 非阻塞算法中的插入算法：利用原子类（AtomicReference）和非阻塞算法
  *
  * @author Brian Goetz and Tim Peierls
  */
@@ -17,6 +18,8 @@ import net.jcip.annotations.*;
 public class LinkedQueue<E> {
 
     private static class Node<E> {
+
+
         final E item;
         final AtomicReference<Node<E>> next;
 
@@ -26,9 +29,14 @@ public class LinkedQueue<E> {
         }
     }
 
+    // 哑节点/
     private final Node<E> dummy = new Node<E>(null, null);
+
+    // 头节点
     private final AtomicReference<Node<E>> head
             = new AtomicReference<Node<E>>(dummy);
+
+    // 尾部节点
     private final AtomicReference<Node<E>> tail
             = new AtomicReference<Node<E>>(dummy);
 

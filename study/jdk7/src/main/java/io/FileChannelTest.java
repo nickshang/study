@@ -6,8 +6,8 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
- * ¹¦ÄÜÃèÊö£ºÑ§Ï°FileChannel.map½«ÎÄ¼ş°´ÕÕÒ»¶¨µÄ´óĞ¡Ó³Éäµ½ÄÚ´æÇøÓò£¬
- * µ±³ÌĞò·ÃÎÊÕâ¸öÄÚ´æÇøÓòÊ±ºò½²Ö±½Ó²Ù×÷Õâ¸öÎÄ¼şÊı¾İ£¬ÕâÑù·½Ê½Ê¡È¥ÁËÊı¾İµ½ÄÚºË¿Õ¼äµ½ÓÃ»§¿Õ¼äµÄ¸´ÖÆËğºÄ¡£
+ * åŠŸèƒ½æè¿°ï¼šå­¦ä¹ FileChannel.mapå°†æ–‡ä»¶æŒ‰ç…§ä¸€å®šçš„å¤§å°æ˜ å°„åˆ°å†…å­˜åŒºåŸŸï¼Œ
+ * å½“ç¨‹åºè®¿é—®è¿™ä¸ªå†…å­˜åŒºåŸŸæ—¶å€™è®²ç›´æ¥æ“ä½œè¿™ä¸ªæ–‡ä»¶æ•°æ®ï¼Œè¿™æ ·æ–¹å¼çœå»äº†æ•°æ®åˆ°å†…æ ¸ç©ºé—´åˆ°ç”¨æˆ·ç©ºé—´çš„å¤åˆ¶æŸè€—ã€‚
  * @author NICK
  *
  */
@@ -15,21 +15,21 @@ public class FileChannelTest {
 	
 	public static void main(String[] args) {
 		
-		int BUFFER_SIZE = 1024;											// ¶¨Òå»º³å×Ö½ÚÊı
-		String filename = "D:\\dmdbms\\data\\FJ_D5000_STLF.dbf";		// ¶¨ÒåÎÄ¼şÃû
-		long fileLength = new File(filename).length();					// »ñÈ¡ÎÄ¼ş×Ö½ÚÊı
+		int BUFFER_SIZE = 1024;											// å®šä¹‰ç¼“å†²å­—èŠ‚æ•°
+		String filename = "D:\\dmdbms\\data\\FJ_D5000_STLF.dbf";		// å®šä¹‰æ–‡ä»¶å
+		long fileLength = new File(filename).length();					// è·å–æ–‡ä»¶å­—èŠ‚æ•°
 		System.out.println( "fileLenght:" +  fileLength );
 
-		int bufferCont = 1 + (int) (fileLength / BUFFER_SIZE);			// ¼ÆËãÎÄ¼şÖĞ³ıÒÔ1024×Ö½ÚÊıÊıÖµ
-		MappedByteBuffer[] buffers = new MappedByteBuffer[bufferCont];	// ÎÄ¼şÓ³Éä¶ÔÏó
+		int bufferCont = 1 + (int) (fileLength / BUFFER_SIZE);			// è®¡ç®—æ–‡ä»¶ä¸­é™¤ä»¥1024å­—èŠ‚æ•°æ•°å€¼
+		MappedByteBuffer[] buffers = new MappedByteBuffer[bufferCont];	// æ–‡ä»¶æ˜ å°„å¯¹è±¡
 		
-		RandomAccessFile file = null; 												// Ëæ»ú·ÃÎÊÎÄ¼şµÄ¶ÁÈ¡ºÍĞ´Èë
+		RandomAccessFile file = null; 												// éšæœºè®¿é—®æ–‡ä»¶çš„è¯»å–å’Œå†™å…¥
 
-		long remaining = fileLength;												// ¶¨ÒåÎÄ¼ş×Ö½Ú³¤¶È
+		long remaining = fileLength;												// å®šä¹‰æ–‡ä»¶å­—èŠ‚é•¿åº¦
 		for (int i = 0; i < bufferCont; i++) {
 			try{
-				if(file == null )file  = new RandomAccessFile(filename,"r");		// ³õÊ¼Ëæ»ú·ÃÎÊÎÄ¼ş¶ÔÏóÎªÖ»¶ÁÄ£Ê½
-				buffers[i] = file.getChannel().map(FileChannel.MapMode.READ_ONLY,	// »ñÈ¡Êı¾İ´æ´¢ÔÚÎÄ¼şÓ³Éä¶ÔÏó
+				if(file == null )file  = new RandomAccessFile(filename,"r");		// åˆå§‹éšæœºè®¿é—®æ–‡ä»¶å¯¹è±¡ä¸ºåªè¯»æ¨¡å¼
+				buffers[i] = file.getChannel().map(FileChannel.MapMode.READ_ONLY,	// è·å–æ•°æ®å­˜å‚¨åœ¨æ–‡ä»¶æ˜ å°„å¯¹è±¡
 						i * BUFFER_SIZE , (int) Math.min(remaining, BUFFER_SIZE) );
 			}catch(Exception e){
 				e.printStackTrace();

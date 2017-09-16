@@ -3,7 +3,7 @@ package thinkinjava.arrays;//: arrays/ArrayOptions.java
 
 import java.util.*;
 
-import static thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 public class ArrayOptions {
     public static void main(String[] args) {

@@ -1,10 +1,10 @@
-package thinkinjava.typeinfo;
+ï»¿package thinkinjava.typeinfo;
 //: typeinfo/SimpleDynamicProxy.java
 
 import java.lang.reflect.*;
 
 /**
- * ´úÀíÊµÀıµÄµ÷ÓÃ´¦Àí³ÌĞòÊµÏÖµÄ½Ó¿Ú¡£
+ * ä»£ç†å®ä¾‹çš„è°ƒç”¨å¤„ç†ç¨‹åºå®ç°çš„æ¥å£ã€‚
  */
 class DynamicProxyHandler implements InvocationHandler {
     private Object proxied;
@@ -26,7 +26,7 @@ class DynamicProxyHandler implements InvocationHandler {
 }
 
 /**
- * ²âÊÔ
+ * æµ‹è¯•
  */
 class SimpleDynamicProxy {
     public static void consumer(Interface iface) {
@@ -35,20 +35,20 @@ class SimpleDynamicProxy {
     }
 
     public static void main(String[] args) {
-        // ÕæÊµ¶ÔÏó
+        // çœŸå®å¯¹è±¡
         RealObject real = new RealObject();
 
-        // µ÷ÓÃ¶ÔÏó
+        // è°ƒç”¨å¯¹è±¡
         consumer(real);
 
-        // ²úÉú´úÀí¶ÔÏó
+        // äº§ç”Ÿä»£ç†å¯¹è±¡
         // Insert a proxy and call again:
         Interface proxy = (Interface) Proxy.newProxyInstance(
                 Interface.class.getClassLoader(),
                 new Class[]{Interface.class},
                 new DynamicProxyHandler(real));
 
-        // µ÷ÓÃ¶ÔÏó
+        // è°ƒç”¨å¯¹è±¡
         consumer(proxy);
     }
 } /* Output: (95% match)	

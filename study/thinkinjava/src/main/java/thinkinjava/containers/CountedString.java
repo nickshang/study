@@ -1,7 +1,8 @@
 package thinkinjava.containers;//: containers/CountedString.java
 // Creating a good hashCode().
 import java.util.*;
-import static thinkinjava.net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 public class CountedString {
   private static List<String> created =

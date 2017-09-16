@@ -1,7 +1,8 @@
 //: net/mindview/atunit/ClassNameFinder.java
-package mindview.atunit;
-import mindview.util.BinaryFile;
-import mindview.util.Directory;
+package net.mindview.atunit;
+import net.mindview.util.BinaryFile;
+import net.mindview.util.Directory;
+import net.mindview.util.Print;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -9,7 +10,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import static mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 public class ClassNameFinder {
   public static String thisClass(byte[] classBytes) {
@@ -74,10 +75,10 @@ public class ClassNameFinder {
   public static void main(String[] args) throws Exception {
     if(args.length > 0) {
       for(String arg : args)
-        print(thisClass(BinaryFile.read(new File(arg))));
+        Print.print(thisClass(BinaryFile.read(new File(arg))));
     } else
       // Walk the entire tree:
       for(File klass : Directory.walk(".", ".*\\.class"))
-        print(thisClass(BinaryFile.read(klass)));
+        Print.print(thisClass(BinaryFile.read(klass)));
   }
 } ///:~

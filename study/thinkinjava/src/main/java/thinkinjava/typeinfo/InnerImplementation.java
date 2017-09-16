@@ -4,10 +4,10 @@ package thinkinjava.typeinfo;
 
 import thinkinjava.typeinfo.interfacea.A;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 class InnerA {
-    // ½«½Ó¿Ú¶¨ÒåÎªÄÚ²¿Àà£¬Í¨¹ı·´ÉäÈÔÈ»µ÷ÓÃÀàµÄ·½·¨
+    // ï¿½ï¿½ï¿½Ó¿Ú¶ï¿½ï¿½ï¿½Îªï¿½Ú²ï¿½ï¿½à£¬Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
     private static class C implements A {
         public void f() {
             print("public C.f()");

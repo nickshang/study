@@ -1,6 +1,6 @@
 //: net/mindview/atunit/TestObjectCleanup.java
 // The @Unit @TestObjectCleanup tag.
-package mindview.atunit;
+package net.mindview.atunit;
 import java.lang.annotation.*;
 
 @Target(ElementType.METHOD)

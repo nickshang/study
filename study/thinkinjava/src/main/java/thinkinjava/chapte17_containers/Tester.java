@@ -1,4 +1,4 @@
-//: containers/Tester.java
+package thinkinjava.chapte17_containers;//: containers/Tester.java
 // Applies Test objects to lists of different containers.
 import java.util.*;
 

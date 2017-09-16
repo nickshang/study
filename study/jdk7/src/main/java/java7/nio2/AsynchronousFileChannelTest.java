@@ -9,31 +9,31 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
 /**
- * Òì²½IO-½«À´
+ * å¼‚æ­¥IO-å°†æ¥
  * Think on 2016/6/24.
  */
 public class AsynchronousFileChannelTest {
 
     public static void main(String[] args) {
 
-        // ´´½¨Â·¾¶
+        // åˆ›å»ºè·¯å¾„
         Path file = Paths.get("E:\\work\\soft\\Linux\\rhel-server-5.7-i386-dvd.iso");
         try {
 
-            // Òì²½´ò¿ªÎÄ¼ş
+            // å¼‚æ­¥æ‰“å¼€æ–‡ä»¶
             AsynchronousFileChannel channel = AsynchronousFileChannel.open(file);
 
-            // ¶ÁÈ¡100 000×Ö½Ú
+            // è¯»å–100 000å­—èŠ‚
             ByteBuffer buffer = ByteBuffer.allocate(1000_000);
             Future<Integer> result= channel.read(buffer,0);
 
             while(!result.isDone()){
-                // ÔÚÖ÷Ïß³ÌÎ´Íê³ÉµÄÇé¿öÏÂ£¬¼ûÆäËûÈÎÎñ
+                // åœ¨ä¸»çº¿ç¨‹æœªå®Œæˆçš„æƒ…å†µä¸‹ï¼Œè§å…¶ä»–ä»»åŠ¡
                 // do something
                 System.out.println("do something ......");
             }
 
-            // »ñÈ¡½á¹û
+            // è·å–ç»“æœ
             Integer byteRead = result.get();
             System.out.println( "Byte read [" +  byteRead+ "]");
 

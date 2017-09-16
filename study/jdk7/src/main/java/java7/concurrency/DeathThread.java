@@ -6,23 +6,23 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * ¾­µäËÀËøÀı×Ó£º
+ * ç»å…¸æ­»é”ä¾‹å­ï¼š
  *
- * -----Ïß³Ì1------------Ïß³Ì2------
- *       A(»ñÈ¡¶ÔÏóËøa)
+ * -----çº¿ç¨‹1------------çº¿ç¨‹2------
+ *       A(è·å–å¯¹è±¡é”a)
  *
- *                       B(»ñÈ¡¶ÔÏóËøb)
+ *                       B(è·å–å¯¹è±¡é”b)
  *
- *       B(ĞèÒª»ñÈ¡¶ÔÏóbÍê³ÉÍê³É¹¤×÷,ÓÉÓÚÏß³Ì2Î´Íê³É¹¤×÷£¬Õ¼ÓÃ¶ÔÏóËøb£¬µ¼ÖÂËÀËø)
+ *       B(éœ€è¦è·å–å¯¹è±¡bå®Œæˆå®Œæˆå·¥ä½œ,ç”±äºçº¿ç¨‹2æœªå®Œæˆå·¥ä½œï¼Œå ç”¨å¯¹è±¡é”bï¼Œå¯¼è‡´æ­»é”)
  *
- *                       A (ĞèÒª»ñÈ¡¶ÔÏóaÍê³ÉÍê³É¹¤×÷)
+ *                       A (éœ€è¦è·å–å¯¹è±¡aå®Œæˆå®Œæˆå·¥ä½œ)
  *
  * Think on 2016/6/25.
  */
 public class DeathThread {
 
     /**
-     * Ïß³Ì1
+     * çº¿ç¨‹1
      */
     public static class T1 implements Runnable {
         Ttest t;
@@ -41,7 +41,7 @@ public class DeathThread {
 
 
     /**
-     * Ïß³Ì2
+     * çº¿ç¨‹2
      */
     public static class T2 implements Runnable {
         Ttest t;
@@ -74,14 +74,14 @@ class Ttest {
     ReentrantLock lock2 = new ReentrantLock();
 
     /**
-     * ·½·¨A
+     * æ–¹æ³•A
      */
     public void setA() {
         try {
-            lock1.lock();               // »ñÈ¡¿ÉÖØÈëÃÅËø1
-            TimeUnit.SECONDS.sleep(3);  // Ë¯Ãß
+            lock1.lock();               // è·å–å¯é‡å…¥é—¨é”1
+            TimeUnit.SECONDS.sleep(3);  // ç¡çœ 
 
-            lock2.lock();               // »ñÈ¡¿ÉÖØÈëÃÅËø2
+            lock2.lock();               // è·å–å¯é‡å…¥é—¨é”2
 
             System.out.println("A");
 
@@ -94,14 +94,14 @@ class Ttest {
     }
 
     /**
-     * ·½·¨B
+     * æ–¹æ³•B
      */
     public void setB() {
         try {
-            lock2.lock();               // »ñÈ¡¿ÉÖØÈëÃÅËø2
-            TimeUnit.SECONDS.sleep(3);  // Ë¯Ãß
+            lock2.lock();               // è·å–å¯é‡å…¥é—¨é”2
+            TimeUnit.SECONDS.sleep(3);  // ç¡çœ 
 
-            lock1.lock();               // »ñÈ¡¿ÉÖØÈëÃÅËø1
+            lock1.lock();               // è·å–å¯é‡å…¥é—¨é”1
             System.out.println("B");
 
         } catch (Exception e) {

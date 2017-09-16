@@ -1,6 +1,7 @@
-//: containers/IndividualTest.java
+package thinkinjava.chapte17_containers;//: containers/IndividualTest.java
 import holding.MapOfList;
-import typeinfo.pets.*;
+import thinkinjava.typeinfo.pets.Individual;
+import thinkinjava.typeinfo.pets.Pet;
 import java.util.*;
 
 public class IndividualTest {

@@ -1,13 +1,13 @@
 package thinkinjava.containers;//: containers/CollectionMethods.java
 // Things you can do with all Collections.
-import thinkinjava.net.mindview.util.Countries;
+import net.mindview.util.Countries;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import static thinkinjava.net.mindview.util.Print.print;
+import static net.mindview.util.Print.print;
 
 public class CollectionMethods {
   public static void main(String[] args) {

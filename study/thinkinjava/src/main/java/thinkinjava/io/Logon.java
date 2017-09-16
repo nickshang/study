@@ -3,7 +3,8 @@ package thinkinjava.io;//: io/Logon.java
 import java.util.concurrent.*;
 import java.io.*;
 import java.util.*;
-import static  thinkinjava.net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 public class Logon implements Serializable {
   private Date date = new Date();

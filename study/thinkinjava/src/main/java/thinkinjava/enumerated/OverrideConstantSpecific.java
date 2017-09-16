@@ -1,5 +1,7 @@
 package thinkinjava.enumerated;//: enumerated/OverrideConstantSpecific.java
-import static thinkinjava.net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 public enum OverrideConstantSpecific {
   NUT, BOLT,

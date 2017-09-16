@@ -8,9 +8,18 @@ apply plugin: 'idea'
 sourceCompatibility = 1.8
 
 repositories {
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/releases/'
+    }
+    maven {
+        url 'http://central.maven.org/maven2/'
+    }
     mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.javassist/javassist
+    compile group: 'org.javassist', name: 'javassist', version: '3.21.0-GA'
+
+    compile group: 'junit', name: 'junit', version: '4.12'
 }

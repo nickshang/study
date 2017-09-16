@@ -5,34 +5,34 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * ÀûÓÃ´úÀí¿ÉÒÔÔÚÔËĞĞÊ±´´½¨Ò»¸öÊµÏÖÁËÒ»×é¸ø¶¨½Ó¿ÚµÄĞÂÀà£¬ÕâÖÖ¹¦ÄÜÖ»ÓĞÔÚ±àÒëÊ±ÎŞ·¨È·¶¨ĞèÒªÊµÏÖÄÄ¸ö½Ó¿ÚÊ±²ÅÓĞ±ØÒªÊ¹ÓÃ¡£
- * ÎÒÃÇĞèÒªÌá¹©Ò»¸öÊµÏÖInvocationHandler½Ó¿ÚµÄÀàÀ´´¦Àíµ÷ÓÃ¹ı³Ì¡£
+ * åˆ©ç”¨ä»£ç†å¯ä»¥åœ¨è¿è¡Œæ—¶åˆ›å»ºä¸€ä¸ªå®ç°äº†ä¸€ç»„ç»™å®šæ¥å£çš„æ–°ç±»ï¼Œè¿™ç§åŠŸèƒ½åªæœ‰åœ¨ç¼–è¯‘æ—¶æ— æ³•ç¡®å®šéœ€è¦å®ç°å“ªä¸ªæ¥å£æ—¶æ‰æœ‰å¿…è¦ä½¿ç”¨ã€‚
+ * æˆ‘ä»¬éœ€è¦æä¾›ä¸€ä¸ªå®ç°InvocationHandleræ¥å£çš„ç±»æ¥å¤„ç†è°ƒç”¨è¿‡ç¨‹ã€‚
  * 
- * À´Ô´£ºhttp://www.sanesee.com/article/15-forgettable-java-questions?utm_source=tuicool&utm_medium=referral
- * @ÀàÃèÊö£º
- * @´´½¨ÈË£ºNICK
+ * æ¥æºï¼šhttp://www.sanesee.com/article/15-forgettable-java-questions?utm_source=tuicool&utm_medium=referral
+ * @ç±»æè¿°ï¼š
+ * @åˆ›å»ºäººï¼šNICK
  * @mail sjshang@tsingsoft.com
- * @´´½¨Ê±¼ä£º2016Äê4ÔÂ4ÈÕ ÉÏÎç9:21:23
- * @ĞŞ¸ÄÈË£ºNICK
- * @ĞŞ¸ÄÊ±¼ä£º2016Äê4ÔÂ4ÈÕ ÉÏÎç9:21:23
- * @ĞŞ¸Ä±¸×¢£º
+ * @åˆ›å»ºæ—¶é—´ï¼š2016å¹´4æœˆ4æ—¥ ä¸Šåˆ9:21:23
+ * @ä¿®æ”¹äººï¼šNICK
+ * @ä¿®æ”¹æ—¶é—´ï¼š2016å¹´4æœˆ4æ—¥ ä¸Šåˆ9:21:23
+ * @ä¿®æ”¹å¤‡æ³¨ï¼š
  * @version v1.0
  * @see [nothing]
  * @bug [nothing]
- * @Copyright ±±¾©ÇåÈí´´ĞÂ¿Æ¼¼¹É·İÓĞÏŞ¹«Ë¾
+ * @Copyright åŒ—äº¬æ¸…è½¯åˆ›æ–°ç§‘æŠ€è‚¡ä»½æœ‰é™å…¬å¸
  */
 public class SaneseeProxyDemo{
 	  public static void main(String[] args) {
-	      //ÅäÖÃµÚÒ»¸ö´úÀíaProxyInstance£¬ÓÃÓÚ´úÀíIntegerÀàĞÍµÄa¡£
+	      //é…ç½®ç¬¬ä¸€ä¸ªä»£ç†aProxyInstanceï¼Œç”¨äºä»£ç†Integerç±»å‹çš„aã€‚
 	      Integer a = 1;
 	      InvocationHandler aHandler = new SaneseeHandler (a);
-    	    // ÆäÖĞµÚÒ»¸ö²ÎÊınull±íÊ¾Ê¹ÓÃÄ¬ÈÏµÄÀà¼ÓÔØÆ÷£¬	 //µÚ¶ş¸ö²ÎÊı±íÃ÷ĞèÒª´úÀíÀàÊµÏÖµÄ½Ó¿Ú£¬µÚÈı¸ö²ÎÊıÎªµ÷ÓÃ´¦ÀíÆ÷Àà
+    	    // å…¶ä¸­ç¬¬ä¸€ä¸ªå‚æ•°nullè¡¨ç¤ºä½¿ç”¨é»˜è®¤çš„ç±»åŠ è½½å™¨ï¼Œ	 //ç¬¬äºŒä¸ªå‚æ•°è¡¨æ˜éœ€è¦ä»£ç†ç±»å®ç°çš„æ¥å£ï¼Œç¬¬ä¸‰ä¸ªå‚æ•°ä¸ºè°ƒç”¨å¤„ç†å™¨ç±»
 	      Object aProxyInstance = Proxy.newProxyInstance(null, new Class[]{Comparable.class}, aHandler); 
-	      //ÅäÖÃµÚÒ»¸ö´úÀíbProxyInstance£¬ÓÃÓÚ´úÀíIntegerÀàĞÍµÄb¡£
+	      //é…ç½®ç¬¬ä¸€ä¸ªä»£ç†bProxyInstanceï¼Œç”¨äºä»£ç†Integerç±»å‹çš„bã€‚
 	      Integer b = 2;
 	      InvocationHandler bHandler = new SaneseeHandler (b);
 	      Object bProxyInstance = Proxy.newProxyInstance(null, new Class[]{Comparable.class}, bHandler);
-	      //Êä³öÁ½¸ö´úÀíÀàµÄ±È½Ï½á¹û
+	      //è¾“å‡ºä¸¤ä¸ªä»£ç†ç±»çš„æ¯”è¾ƒç»“æœ
 	      Comparable aComparable = (Comparable)aProxyInstance;
 	      Comparable bComparable = (Comparable)bProxyInstance;
 	      System.out.println(aComparable.compareTo(b));
@@ -41,7 +41,7 @@ public class SaneseeProxyDemo{
 
 class SaneseeHandler implements InvocationHandler
 {
-  //ĞèÒª´úÀíµÄ¶ÔÏó
+  //éœ€è¦ä»£ç†çš„å¯¹è±¡
   private Object target;
   public SaneseeHandler (Object t)
   {
@@ -49,11 +49,11 @@ class SaneseeHandler implements InvocationHandler
   }
   public Object invoke(Object proxy, Method m, Object[] args) throws Throwable
   {
-    //´òÓ¡±»´úÀíµÄ¶ÔÏó
+    //æ‰“å°è¢«ä»£ç†çš„å¯¹è±¡
     System.out.print(target);
-    // ´òÓ¡·½·¨Ãû
+    // æ‰“å°æ–¹æ³•å
     System.out.print("." + m.getName() + "(");
-    // ´òÓ¡²ÎÊı
+    // æ‰“å°å‚æ•°
     if (args != null)
     {
       for (int i = 0; i < args.length; i++)
@@ -63,7 +63,7 @@ class SaneseeHandler implements InvocationHandler
       }
     }
     System.out.println(")");
-    // µ÷ÓÃ·½·¨
+    // è°ƒç”¨æ–¹æ³•
     return m.invoke(target, args);
   }
 }

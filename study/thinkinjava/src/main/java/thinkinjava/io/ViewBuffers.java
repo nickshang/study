@@ -2,8 +2,8 @@ package thinkinjava.io;//: io/ViewBuffers.java
 
 import java.nio.*;
 
-import static  thinkinjava.net.mindview.util.Print.*;
-import static thinkinjava.net.mindview.util.Print.printnb;
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 /**
  * 通过在同一个ByteBuffer上建立不同的视图缓冲器，

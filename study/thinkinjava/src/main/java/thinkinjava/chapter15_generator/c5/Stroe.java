@@ -1,21 +1,21 @@
 package thinkinjava.chapter15_generator.c5;
 
-import thinkinjava.net.mindview.util.Generator;
+import net.mindview.util.Generator;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 /**
  * 
- * @类描述：利用泛型构建复杂的模型
- * 构建一个零售店，包含走廊、货架和商品。
- * @创建人：NICK
+ * @锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟矫凤拷锟酵癸拷锟斤拷锟斤拷锟接碉拷模锟斤拷
+ * 锟斤拷锟斤拷一锟斤拷锟斤拷锟桔店，锟斤拷锟斤拷锟斤拷锟饺★拷锟斤拷锟杰猴拷锟斤拷品锟斤拷
+ * @锟斤拷锟斤拷锟剿ｏ拷NICK
  * @mail sjshang@tsingsoft.com
- * @创建时间：2016年4月28日 上午10:32:13
+ * @锟斤拷锟斤拷时锟戒：2016锟斤拷4锟斤拷28锟斤拷 锟斤拷锟斤拷10:32:13
  * @version v1.0
  * @see [nothing]
  * @bug [nothing]
- * @Copyright 北京清软创新科技股份有限公司
+ * @Copyright 锟斤拷锟斤拷锟斤拷锟斤拷锟铰科硷拷锟缴凤拷锟斤拷锟睫癸拷司
  */
 public class Stroe extends ArrayList<Aisle> {
 	private ArrayList<CheckOutStand> checkouts = 
@@ -34,9 +34,9 @@ public class Stroe extends ArrayList<Aisle> {
 		for(Aisle a : this )
 			for(Shelf s : a ){
 				for(Product p : s){
-//					result.append( "走廊:" );
+//					result.append( "锟斤拷锟斤拷:" );
 //					result.append(  a );
-//					result.append( " 货架:" );
+//					result.append( " 锟斤拷锟斤拷:" );
 //					result.append(  s );
 					result.append( " produce:" );
 					result.append( p.getName() );
@@ -59,23 +59,23 @@ class Coffee {}
 
 /**
  * 
- * @类描述：商店商品
- * @创建人：NICK
+ * @锟斤拷锟斤拷锟斤拷锟斤拷锟教碉拷锟斤拷品
+ * @锟斤拷锟斤拷锟剿ｏ拷NICK
  * @mail sjshang@tsingsoft.com
  * @version v1.0
  * @see [nothing]
  * @bug [nothing]
- * @Copyright 北京清软创新科技股份有限公司
+ * @Copyright 锟斤拷锟斤拷锟斤拷锟斤拷锟铰科硷拷锟缴凤拷锟斤拷锟睫癸拷司
  */
 class Product {
 	
 	/**
-	 * 商品ID
+	 * 锟斤拷品ID
 	 */
 	private int id ;
 	
 	/**
-	 * 商品名称
+	 * 锟斤拷品锟斤拷锟斤拷
 	 */
 	private String name;
 	
@@ -83,8 +83,8 @@ class Product {
 	 * 
 	 * Title:
 	 * Description:
-	 * @param id 商品ID
-	 * @param name 商品名称
+	 * @param id 锟斤拷品ID
+	 * @param name 锟斤拷品锟斤拷锟斤拷
 	 */
 	public Product(int id, String name) {
 		this.id = id;
@@ -95,17 +95,17 @@ class Product {
 	
 	@Override
 	public String toString() {
-		return "商品ID:" + id + ",商品名称:" + name;
+		return "锟斤拷品ID:" + id + ",锟斤拷品锟斤拷锟斤拷:" + name;
 	}
 
 
 
 	/**
-	 * 生成一个迭代器
-	 * @描述:
+	 * 锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷
+	 * @锟斤拷锟斤拷:
 	 * @return
-	 * @返回类型 Generator<Product>
-	 * @创建人 NICK
+	 * @锟斤拷锟斤拷锟斤拷锟斤拷 Generator<Product>
+	 * @锟斤拷锟斤拷锟斤拷 NICK
 	 * @since
 	 * @throws
 	 */
@@ -141,14 +141,14 @@ class Product {
 
 /**
  * 
- * @类描述： 货架
- * @创建人：NICK
+ * @锟斤拷锟斤拷锟斤拷锟斤拷 锟斤拷锟斤拷
+ * @锟斤拷锟斤拷锟剿ｏ拷NICK
  * @mail sjshang@tsingsoft.com
- * @创建时间：2016年4月28日 下午9:27:25
+ * @锟斤拷锟斤拷时锟戒：2016锟斤拷4锟斤拷28锟斤拷 锟斤拷锟斤拷9:27:25
  * @version v1.0
  * @see [nothing]
  * @bug [nothing]
- * @Copyright 北京清软创新科技股份有限公司
+ * @Copyright 锟斤拷锟斤拷锟斤拷锟斤拷锟铰科硷拷锟缴凤拷锟斤拷锟睫癸拷司
  */
 class Shelf extends ArrayList<Product>{
 	public Shelf(int nProducts){
@@ -160,14 +160,14 @@ class Shelf extends ArrayList<Product>{
 
 /**
  * 
- * @类描述：走廊
- * @创建人：NICK
+ * @锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
+ * @锟斤拷锟斤拷锟剿ｏ拷NICK
  * @mail sjshang@tsingsoft.com
- * @创建时间：2016年4月28日 下午9:25:00
+ * @锟斤拷锟斤拷时锟戒：2016锟斤拷4锟斤拷28锟斤拷 锟斤拷锟斤拷9:25:00
  * @version v1.0
  * @see [nothing]
  * @bug [nothing]
- * @Copyright 北京清软创新科技股份有限公司
+ * @Copyright 锟斤拷锟斤拷锟斤拷锟斤拷锟铰科硷拷锟缴凤拷锟斤拷锟睫癸拷司
  */
 class Aisle extends ArrayList<Shelf>{
 	public Aisle(int nShelves, int nProducts){

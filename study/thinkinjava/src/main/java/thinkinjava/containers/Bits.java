@@ -3,7 +3,7 @@ package thinkinjava.containers;//: containers/Bits.java
 
 import java.util.*;
 
-import static thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 public class Bits {
     public static void printBitSet(BitSet b) {

@@ -6,7 +6,8 @@ import  thinkinjava.typeinfo.pets.*;
 
 import java.util.*;
 
-import static  thinkinjava.net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Print.printnb;
 
 public class PetCount {
     static class PetCounter extends HashMap<String, Integer> {

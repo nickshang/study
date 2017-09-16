@@ -1,4 +1,4 @@
-//: containers/SortedMapDemo.java
+package thinkinjava.chapte17_containers;//: containers/SortedMapDemo.java
 // What you can do with a TreeMap.
 import java.util.*;
 import net.mindview.util.*;

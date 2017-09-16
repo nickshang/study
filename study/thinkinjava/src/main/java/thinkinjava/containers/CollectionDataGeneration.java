@@ -1,7 +1,7 @@
 package thinkinjava.containers;//: containers/CollectionDataGeneration.java
 // Using the Generators defined in the Arrays chapter.
-import thinkinjava.net.mindview.util.CollectionData;
-import thinkinjava.net.mindview.util.RandomGenerator;
+import net.mindview.util.CollectionData;
+import net.mindview.util.RandomGenerator;
 
 import java.util.ArrayList;
 import java.util.HashSet;

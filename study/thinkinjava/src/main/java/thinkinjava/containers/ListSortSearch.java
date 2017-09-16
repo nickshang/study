@@ -1,14 +1,13 @@
 package thinkinjava.containers;//: containers/ListSortSearch.java
 // Sorting and searching Lists with Collections utilities.
 import java.util.*;
-import static thinkinjava.net.mindview.util.Print.*;
 
 public class ListSortSearch {
   public static void main(String[] args) {
     List<String> list =
       new ArrayList<String>(Utilities.list);
     list.addAll(Utilities.list);
-    print(list);
+    //print(list);
     Collections.shuffle(list, new Random(47));
     print("Shuffled: " + list);
     // Use a ListIterator to trim off the last elements:
@@ -31,6 +30,9 @@ public class ListSortSearch {
       String.CASE_INSENSITIVE_ORDER);
     print("Location of " + key + " is " + index +
       ", list.get(" + index + ") = " + list.get(index));
+  }
+
+  private static void print(String s) {
   }
 } /* Output:
 [one, Two, three, Four, five, six, one, one, Two, three, Four, five, six, one]

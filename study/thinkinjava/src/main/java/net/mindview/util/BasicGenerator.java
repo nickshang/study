@@ -1,7 +1,7 @@
 //: net/mindview/util/BasicGenerator.java
 // Automatically create a Generator, given a class
 // with a default (no-arg) constructor.
-package mindview.util;
+package net.mindview.util;
 
 public class BasicGenerator<T> implements  Generator<T> {
   private Class<T> type;

@@ -2,7 +2,8 @@ package thinkinjava.io;//: io/Worm.java
 // Demonstrates object serialization.
 import java.io.*;
 import java.util.*;
-import static  thinkinjava.net.mindview.util.Print.*;
+
+import static net.mindview.util.Print.print;
 
 class Data implements Serializable {
   private int n;

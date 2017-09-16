@@ -1,7 +1,7 @@
 package lambda.lx;
 
 /**
- * Ïß³Ì
+ * çº¿ç¨‹
  * Think on 2016/6/30.
  */
 public class ThreadTest {
