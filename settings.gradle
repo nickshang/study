@@ -17,4 +17,6 @@ include 'study:test'
 findProject(':study:test')?.name = 'test'
 include 'study:jvm'
 findProject(':study:jvm')?.name = 'jvm'
+include 'study:util'
+findProject(':study:util')?.name = 'util'
 

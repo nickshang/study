@@ -14,7 +14,6 @@ repositories {
         url 'http://central.maven.org/maven2/'
     }
 
-
     maven {
         url 'https://maven.repository.redhat.com/ga/'
     }
@@ -22,8 +21,6 @@ repositories {
     maven {
         url 'http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/'
     }
-
-
 }
 
 dependencies {
