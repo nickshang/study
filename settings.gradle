@@ -19,4 +19,8 @@ include 'study:jvm'
 findProject(':study:jvm')?.name = 'jvm'
 include 'study:util'
 findProject(':study:util')?.name = 'util'
+include 'study:architecture'
+findProject(':study:architecture')?.name = 'architecture'
+include 'study:java_concurrency_in_actual'
+findProject(':study:java_concurrency_in_actual')?.name = 'java_concurrency_in_actual'
 

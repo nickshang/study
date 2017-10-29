@@ -1,10 +1,14 @@
 package java7.nio2;
 
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.lang.invoke.MethodHandle;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.List;
 
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
@@ -91,6 +95,15 @@ public class FilesTest {
             System.out.println("s:" + s);
         }
         byte[] bytes = Files.readAllBytes(logfile);
+
+
+        // 简化文件写入
+        Path text = Paths.get("F:\\49.txt");
+        if( Files.exists(text) )    Files.delete(target);     // 判断是否存在 —> 删除
+        text = Files.createFile(target);                     // 创建
+        try(BufferedWriter bw = Files.newBufferedWriter(logfile, StandardCharsets.UTF_8, StandardOpenOption.WRITE)){
+                    bw.write("hello wold");
+        }
 
 
     }
