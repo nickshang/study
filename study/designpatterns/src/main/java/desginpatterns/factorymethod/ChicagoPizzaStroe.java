@@ -1,4 +1,4 @@
-﻿package desginpatterns.factorymethod;
+package desginpatterns.factorymethod;
 
 /**
  * 功能描述：芝加哥Pizza商店

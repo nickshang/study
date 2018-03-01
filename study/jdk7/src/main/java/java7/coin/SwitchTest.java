@@ -1,5 +1,7 @@
 package java7.coin;
 
+import java.util.Objects;
+
 /**
  * switch语句中String
  */

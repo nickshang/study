@@ -1,6 +1,7 @@
 package com.shang.chapter15;
 
 import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.*;
 
@@ -19,7 +20,6 @@ public class LinkedQueue<E> {
 
     private static class Node<E> {
 
-
         final E item;
         final AtomicReference<Node<E>> next;
 
@@ -27,6 +27,7 @@ public class LinkedQueue<E> {
             this.item = item;
             this.next = new AtomicReference<Node<E>>(next);
         }
+
     }
 
     // 哑节点/

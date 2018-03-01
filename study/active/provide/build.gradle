@@ -1,0 +1,52 @@
+group 'com.shang.activem'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url 'http://repo.spring.io/release/'
+    }
+
+    maven {
+        url 'https://repository.jboss.org/nexus/content/repositories/releases/'
+    }
+
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/releases/'
+    }
+
+    maven {
+        url 'http://central.maven.org/maven2/'
+    }
+
+    maven {
+        url 'https://maven.repository.redhat.com/ga/'
+    }
+
+}
+
+dependencies {
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.13.RELEASE'
+    compile group: 'org.springframework', name: 'spring-core', version: '4.3.13.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.3.13.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.13.RELEASE'
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.13.RELEASE'
+    compile group: 'org.springframework', name: 'spring-jms', version: '4.3.13.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context-support', version: '4.3.13.RELEASE'
+
+    compile group: 'org.apache.activemq', name: 'activemq-pool', version: '5.11.1'
+    compile group: 'org.apache.activemq', name: 'activemq-all', version: '5.11.1'
+
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.28'
+
+
+    compile group: 'org.jboss.spec.javax.jms', name: 'jboss-jms-api_1.1_spec', version: '1.0.1.Final'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

@@ -1,4 +1,4 @@
-﻿package desginpatterns.factorymethod;
+package desginpatterns.factorymethod;
 
 /**
  * 功能描述：纽约风味Pizza

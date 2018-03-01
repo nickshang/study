@@ -1,6 +1,9 @@
 package com.shang.chapter8;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.*;
 import java.util.logging.*;
 
@@ -13,6 +16,15 @@ import java.util.logging.*;
  * @author Brian Goetz and Tim Peierls
  */
 public class MyAppThread extends Thread {
+
+
+    private static final ThreadLocal<DateFormat> df = new ThreadLocal<DateFormat>() {
+        @Override
+        protected DateFormat initialValue() {
+            return new SimpleDateFormat("yyyy-MM-dd");
+        }
+    };
+
     public static final String DEFAULT_NAME = "MyAppThread";
     private static volatile boolean debugLifecycle = false;
     private static final AtomicInteger created = new AtomicInteger();
@@ -24,6 +36,7 @@ public class MyAppThread extends Thread {
     }
 
     public MyAppThread(Runnable runnable, String name) {
+
         super(runnable, name + "-" + created.incrementAndGet());
         setUncaughtExceptionHandler(new UncaughtExceptionHandler() {
             public void uncaughtException(Thread t,

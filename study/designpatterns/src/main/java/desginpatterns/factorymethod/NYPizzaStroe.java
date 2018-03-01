@@ -1,4 +1,4 @@
-﻿package desginpatterns.factorymethod;
+package desginpatterns.factorymethod;
 
 
 /**

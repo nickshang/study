@@ -1,5 +1,5 @@
 //: net/mindview/util/TaskItem.java
-// A Future and the Callable that produced it.
+// A Future and the CallableTest that produced it.
 package net.mindview.util;
 import java.util.concurrent.*;
 

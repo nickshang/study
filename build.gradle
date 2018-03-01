@@ -11,6 +11,13 @@ repositories {
     mavenCentral()
 }
 
+
+//gradle 之前不支持 provided 的依赖配置，这里先强制声明一个，后续就能用 provided 了（仿照maven）
+configurations {
+    provided
+    compile.extendsFrom provided
+}
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
